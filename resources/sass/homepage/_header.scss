@@ -1,0 +1,32 @@
+.navbar-brand{
+  margin-left: 20px;
+}
+
+.navbar-nav {
+  justify-content: flex-end;
+  .nav-link {
+    margin-right: 35px;
+    color : #505353 !important;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    &:hover {
+      background-color: #B2D235 ;
+      border-radius: 17px;
+      color: #FEFFFF !important;
+    }
+  }
+}
+
+.example {
+  display: flex;
+  align-items: center;
+  min-height: 54vh;
+}
+
+@media (max-width: 992px) {
+	// TODO
+}
