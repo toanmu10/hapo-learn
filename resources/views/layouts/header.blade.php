@@ -21,7 +21,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Profile</a>
                 </li>
-            </ul>
+            </ul>   
         </div>
     </nav>
 </header>

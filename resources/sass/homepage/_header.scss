@@ -6,7 +6,7 @@
   justify-content: flex-end;
   .nav-link {
     margin-right: 35px;
-    color : #505353 !important;
+    color : $main-text-color !important;
     text-transform: uppercase;
     font-family: 'Open Sans';
     font-style: normal;
@@ -14,19 +14,17 @@
     font-size: 14px;
     line-height: 19px;
     &:hover {
-      background-color: #B2D235 ;
+      background-color: $main-bg-color ;
       border-radius: 17px;
       color: #FEFFFF !important;
     }
   }
 }
 
-.example {
-  display: flex;
-  align-items: center;
-  min-height: 54vh;
-}
+
+
 
 @media (max-width: 992px) {
 	// TODO
 }
+

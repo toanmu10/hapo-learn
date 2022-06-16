@@ -1,0 +1,98 @@
+.example {
+//   min-height: 60vh;
+width: 100%;
+min-height: 200vh;
+}
+
+.bg {
+    width: 100%;
+    height: 135px;
+    background-image: linear-gradient(to bottom ,#ffffff,#e2e2e2);
+    position: relative;
+}
+
+.courses-primary {
+    margin-top: -70px; 
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    &__item {
+        width: 370px;
+        height: 470px;
+        &:nth-child(2){
+            .thumb{
+                background-color: #DC594C;
+            }    
+        }
+        &:last-child {
+            .thumb {
+                background-color: #556598;
+            }
+        }
+        .thumb {
+            width: 370px;
+            height: 215px;
+            background-color:#3F6185;
+            position: relative;
+            border-radius: 15px 15px 0px 0px;
+        }
+        .thumb-image {
+            position: absolute;
+            transform: translate(72px,45px);
+            width: 226px;
+            height: 125px;
+        }
+
+        .content {
+            @include fb;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .title{
+            color: $main-bg-color ;
+            @include mg-x;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-family: $main-font;
+            font-weight: 700;
+            line-height: 36.78px;
+            letter-spacing: $lp-5;
+        }
+        .description {
+            @include mg-x;
+            margin-bottom: 15px; 
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: $main-text-color ;
+            /* or 143% */
+
+            text-align: center;
+            letter-spacing: $lp-5;
+            color: #505353;
+        }
+        .btn-add{
+            padding: 10px 25px;
+            color: $main-text-color;
+            background-color: $main-bg-color;
+            box-shadow: inset 0px 1.5px 2px #6F8710;
+            border-radius: 22px;
+            font-size: 18px;
+            margin-bottom: 46px;
+            font-weight: 700; 
+            cursor: pointer;
+            border: white;
+        }
+        .btn-add:hover {
+            color : $white-text-color;  
+        }
+    }
+}
