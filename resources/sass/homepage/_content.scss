@@ -1,5 +1,4 @@
 .example {
-//   min-height: 60vh;
 width: 100%;
 min-height: 200vh;
 }
@@ -48,14 +47,13 @@ min-height: 200vh;
     
 
     .item__content {
-        @include fb;
         flex-direction: column;
         align-items: center;
         border-radius: 0 0 15px 15px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        @include fb;
         &__title{
             color: $main-bg-color ;
-            @include mg-x;
             margin-top: 25px;
             margin-bottom: 10px;
             font-size: 30px;
@@ -63,9 +61,9 @@ min-height: 200vh;
             font-weight: 700;
             line-height: 36.78px;
             letter-spacing: $lp-5;
+            @include mg-x;
         }
         &__description {
-            @include mg-x;
             margin-bottom: 15px; 
             font-family: $main-font;
             font-style: normal;
@@ -73,11 +71,10 @@ min-height: 200vh;
             font-size: 14px;
             line-height: 20px;
             color: $main-text-color ;
-            /* or 143% */
-    
             text-align: center;
             letter-spacing: $lp-5;
             color: #505353;
+            @include mg-x;
         }
         .btn-add{
             padding: 10px 25px;
