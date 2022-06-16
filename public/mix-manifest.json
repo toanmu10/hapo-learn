@@ -4,8 +4,10 @@
     "/images/a.png": "/images/a.png",
     "/images/cu.png": "/images/cu.png",
     "/images/html.png": "/images/html.png",
+    "/images/laravel.png": "/images/laravel.png",
     "/images/logo.png": "/images/logo.png",
     "/images/logo_white.png": "/images/logo_white.png",
+    "/images/php.png": "/images/php.png",
     "/images/Vector.png": "/images/Vector.png",
     "/fonts/utm_bryantlg-webfont.woff": "/fonts/utm_bryantlg-webfont.woff",
     "/fonts/utm_bryantlg-webfont.woff2": "/fonts/utm_bryantlg-webfont.woff2",
@@ -18,7 +20,5 @@
     "/webfonts/fa-solid-900.ttf": "/webfonts/fa-solid-900.ttf",
     "/webfonts/fa-solid-900.woff2": "/webfonts/fa-solid-900.woff2",
     "/webfonts/fa-v4compatibility.ttf": "/webfonts/fa-v4compatibility.ttf",
-    "/webfonts/fa-v4compatibility.woff2": "/webfonts/fa-v4compatibility.woff2",
-    "/images/laravel.png": "/images/laravel.png",
-    "/images/php.png": "/images/php.png"
+    "/webfonts/fa-v4compatibility.woff2": "/webfonts/fa-v4compatibility.woff2"
 }
