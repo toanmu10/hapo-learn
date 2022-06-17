@@ -48,8 +48,12 @@
           background-color: $main-bg-color ;
           color: $white-text-color;
         }
-      }
-      
+      }     
     }
-
+  
 }
+.bg {
+  height: 150px;
+  background-image: linear-gradient(to bottom ,#ffffff,#e2e2e2);
+  position: relative;
+} 
