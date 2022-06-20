@@ -17,20 +17,22 @@
 }
 
 .nav-item {
-    margin: 0 35px;
+  margin: 0 35px;
 
-    &:hover {
-        border-radius: 17px;
-        background-color: #B2D235;
-    }
+  &:hover {
+      border-radius: 17px;
+      background-color: #B2D235;
+  }
 }
 
 .nav-link {
-    &:hover {
-        color: white !important;
-    }
-    color: #505353 !important;
-    font-weight: 600;
+
+  &:hover {
+      color: white !important;
+  }
+
+  color: #505353 !important;
+  font-weight: 600;
 }
 
 .example {
@@ -51,6 +53,7 @@
   }
 
   .nav-item {
+
     &:hover {
       border-radius: 17px;
       background-color: white;
@@ -58,9 +61,11 @@
   }
 
   .nav-link {
+
     &:hover {
       color: $main-bg-color !important ;
     }
+
     padding-top: 20px;
     border-bottom: 1px solid #F1F1F1;
     font-size: 16px;
@@ -68,7 +73,7 @@
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
   .navbar-brand {
     margin-left: 21px;
   }
@@ -83,6 +88,7 @@
   }
 
   .nav-item {
+
     &:hover {
       border-radius: 17px;
       background-color: white;
@@ -90,14 +96,17 @@
   }
 
   .nav-link {
+
     &:hover {
       color: $main-bg-color !important ;
     }
+
     padding-top: 20px;
     border-bottom: 1px solid #F1F1F1;
     font-size: 16px;
     line-height: 22px;
   }
 }
+
 
 
