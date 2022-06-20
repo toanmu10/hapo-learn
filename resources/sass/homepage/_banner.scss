@@ -115,6 +115,11 @@
     padding: 6px 30px 7px 30px;
     margin-top: 20px;
   } 
+
+  .bg {
+    margin-top: -435px;
+    height: 116px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -136,5 +141,10 @@
     .banner-button {
       padding: 6px 60px 7px 60px;
     }
+  }
+
+  .bg {
+    margin-top: -300px;
+    height: 80px;
   }
 }
