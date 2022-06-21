@@ -23,6 +23,20 @@
     </div>
     <div class="bg"></div>
 </section>
-<section class="example"> 
+<section class="example">
+    <div class="container">
+        <div class="row">
+            <div class="card course-item">
+                <div class="img">
+                    <img class="card-img-top card-img" src="{{ asset('images/html.png') }}" alt="Card image cap">
+                </div>            
+                <div class="card-body">
+                    <p class="card-title">HTML/CSS/js Tutorial</p>
+                    <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                    <a href="#" class="btn a">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 @endsection
