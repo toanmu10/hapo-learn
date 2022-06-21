@@ -1,6 +1,14 @@
-// .banner {
-//   height: 200vh;
-// }
+@font-face {
+  font-family: UTM BryantLG;
+  src: url("../../assets/fonts/UTM_BryantLG_B.ttf");
+  src: url("../../assets/fonts/UTM_BryantLG.ttf");
+  src: url("../../assets/fonts/utm_bryantlg-webfont.woff");
+  src: url("../../assets/fonts/utm_bryantlg-webfont.woff2");
+}
+
+.banner {
+  margin-top: 100px;
+}
 
 .banner-container {
   width: 100%;
@@ -20,17 +28,20 @@
 
 
 .banner-heading {
-  width: 460px;
+  max-width: 570px;
   line-height: 1.3;
+  font-family: $main-font;
+  font-size: 50px;
 
   .banner-slogan {
-    font-size: 38px;
     color: #11114E;
     font-weight: 400;
+    font-family: $main-font;
   }
 
   .slogan-title {
     font-weight: 700;
+    font-family: $main-font;
   }
 }
 
@@ -70,6 +81,10 @@
 }
 
 @media (max-width: 768px) {
+  .banner {
+    margin-top: 80px;
+  }
+
   .banner-container {
     width: 100%;
     height: 100vh;
@@ -84,13 +99,13 @@
   
   .banner-content {
     top: 60px ;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   
   .banner-heading {
     .banner-slogan {
-      font-size: 22px;
-      max-width: 250px;
+      font-size: 30px;
+      max-width: 341px;
     }
   
     .slogan-title {
@@ -100,37 +115,40 @@
   
   .banner-text {
     .paragraph {
-      font-size: 12px;
-      max-width: 200px;
+      font-size: 16px;
+      max-width: 230px;
     }
   }
   
   img {
-    width: 22px;
+    width: 30px;
   }
   
   .banner-button {
     width: auto ;
     height: auto;
-    font-size: 12px;
+    font-size: 16px;
     padding: 6px 30px 7px 30px;
     margin-top: 20px;
   } 
 
   .bg {
-    margin-top: -652px;
+    margin-top: -660px;
     height: 116px;
   }
 }
 
 @media (max-width: 480px) {
+  .banner {
+    margin-top: 65px;
+  }
+
   .banner-container {
     justify-content: center;
   }
 
   .banner-content {
     top: 190px ;
-    margin-left: 0;
 
     .banner-heading {
       max-width: 257px;
@@ -146,7 +164,7 @@
   }
 
   .bg {
-    margin-top: -460px;
+    margin-top: -490px;
     height: 80px;
   }
 }
