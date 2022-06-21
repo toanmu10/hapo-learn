@@ -10,9 +10,9 @@
   margin-top: 100px;
 }
 
-.banner-container {
-  width: 100%;
+.banner-main {
   height: 655px;
+  width: 100%;
   background-image: url(../../assets/images/a.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,7 +46,6 @@
 
 .banner-text {
   margin-top: 20px;
-
   .paragraph {
     font-size: 20px;
     color: #505353;
@@ -148,10 +147,8 @@
 
   .banner-content {
     top: 190px ;
-
     .banner-heading {
       max-width: 257px;
-
       .banner-slogan {
         font-size: 22px;
       }
