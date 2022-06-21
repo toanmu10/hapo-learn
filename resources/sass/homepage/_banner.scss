@@ -48,7 +48,7 @@
   margin-top: 20px;
   .paragraph {
     font-size: 20px;
-    color: #505353;
+    color: $main-text-color;
     font-weight: 400;
     max-width: 300px;
   }
@@ -64,7 +64,7 @@
   font-family: $main-font;
   margin-top: 26px;
   background: $main-bg-color;
-  color: #FFFFFF;
+  color: $white-text-color;
   font-weight: 700;
   font-size: 30px;
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -92,7 +92,6 @@
     display: flex;
     align-items: center;
     position: relative;
-    
   }
   
   .banner-content {
