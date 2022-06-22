@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
     "/images/a.png": "/images/a.png",
     "/images/cu.png": "/images/cu.png",
     "/images/hapo_banner.png": "/images/hapo_banner.png",
@@ -21,6 +22,5 @@
     "/webfonts/fa-solid-900.woff2": "/webfonts/fa-solid-900.woff2",
     "/webfonts/fa-v4compatibility.ttf": "/webfonts/fa-v4compatibility.ttf",
     "/webfonts/fa-v4compatibility.woff2": "/webfonts/fa-v4compatibility.woff2",
-    "/css/app.css": "/css/app.css",
     "/images/owl.png": "/images/owl.png"
 }

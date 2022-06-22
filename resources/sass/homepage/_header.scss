@@ -17,6 +17,7 @@
 .nav-item {
   margin: 0 35px;
   text-transform: uppercase;
+
   &:hover {
       border-radius: 17px;
       background-color: $main-bg-color;
@@ -27,13 +28,15 @@
   .navbar-nav {
     display: flex;
     justify-content: flex-end;
+
     .nav-link {
       font-weight: 700;
       color: $main-text-color; 
+      font-weight: 600;
+
       &:hover {
         color: white !important;
       }
-      font-weight: 600;
     }
   }
 }
@@ -64,13 +67,14 @@
 
   .nav-link {
     font-weight: 700;
-    &:hover {
-      color: $main-bg-color !important ;
-    }
     padding-top: 20px;
     border-bottom: 1px solid #F1F1F1;
     font-size: 16px;
     line-height: 21.9px;
+
+    &:hover {
+      color: $main-bg-color !important ;
+    }
   }
 }
 
@@ -97,12 +101,13 @@
 
   .nav-link {
     font-weight: 700;
-    &:hover {
-      color: $main-bg-color !important ;
-    }
     padding-top: 20px;
     border-bottom: 1px solid #F1F1F1;
     font-size: 16px;
     line-height: 22px;
+
+    &:hover {
+      color: $main-bg-color !important ;
+    }
   }
 }
