@@ -5,10 +5,6 @@
   top: 0;
 }
 
-.bg-white {
-  background-color: #FFFFFF;
-}
-
 .navbar-brand {
   margin-left: 25px;
 }
@@ -20,6 +16,7 @@
 
 .nav-item {
   margin: 0 35px;
+  text-transform: uppercase;
   &:hover {
       border-radius: 17px;
       background-color: $main-bg-color;
