@@ -33,9 +33,7 @@
                     </div>
                     <div class="card-body col-lg-12 col-md-8">
                         <h5 class="card-title">PHP Tutorial</h5>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I
-                            had
-                            coded quite a bit, but never touched anything in regards to web development.</p>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
                         <a href="#" class="btn btn-hapo">Take This Course</a>
                     </div>
                 </div>
