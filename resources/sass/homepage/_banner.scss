@@ -80,34 +80,34 @@
     height: 100vh;
     background-size: contain;
   }
-  
+
   .banner-content {
     top: 60px ;
     margin-left: 20px;
   }
-  
+
   .banner-heading {
     .banner-slogan {
       font-size: 30px;
       max-width: 341px;
     }
-  
+
     .slogan-title {
       font-weight: 700;
     }
   }
-  
+
   .banner-text {
     .paragraph {
       font-size: 16px;
       max-width: 230px;
     }
   }
-  
+
   img {
     width: 30px;
   }
-  
+
   .banner-button {
     width: auto ;
     height: auto;
@@ -136,7 +136,7 @@
 
     .banner-heading {
       max-width: 257px;
-      
+
       .banner-slogan {
         font-size: 22px;
       }
@@ -152,3 +152,116 @@
     height: 80px;
   }
 }
+.nav-test {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.navbar-brand {
+  margin-left: 25px;
+}
+
+.logo-image {
+  width: 340px;
+  height: 70px;
+}
+
+.nav-item {
+  margin: 0 35px;
+  text-transform: uppercase;
+
+  &:hover {
+    border-radius: 17px;
+    background-color: $main-bg-color;
+  }
+}
+
+.navbar-light {
+  .navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+
+    .nav-link {
+      font-weight: 700;
+      color: $main-text-color; 
+      font-weight: 600;
+
+      &:hover {
+        color: white !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {  
+  .nav-test {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+  }
+
+  .navbar-brand {
+    margin-left: 21px;
+  }
+
+  .logo-image {
+    width: 224px;
+    height: 51px;
+  }
+
+  .nav-item {
+    &:hover {
+      border-radius: 17px;
+      background-color: white;
+    }
+  }
+
+  .nav-link {
+    font-weight: 700;
+    padding-top: 20px;
+    border-bottom: 1px solid #F1F1F1;
+    font-size: 16px;
+    line-height: 21.9px;
+
+    &:hover {
+      color: $main-bg-color !important ;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    margin-left: 21px;
+  }
+
+  .logo-image {
+    width: 130px;
+    height: 27px;
+  }
+
+  .navbar-toggler-icon {
+    font-size: 20px;
+  }
+
+  .nav-item {
+    &:hover {
+      border-radius: 17px;
+      background-color: white;
+    }
+  }
+
+  .nav-link {
+    font-weight: 700;
+    padding-top: 20px;
+    border-bottom: 1px solid #F1F1F1;
+    font-size: 16px;
+    line-height: 22px;
+
+    &:hover {
+      color: $main-bg-color !important ;
+    }
+  }
+} 

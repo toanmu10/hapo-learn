@@ -1,13 +1,12 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/images/a.png": "/images/a.png",
-    "/images/cu.png": "/images/cu.png",
     "/images/hapo_banner.png": "/images/hapo_banner.png",
     "/images/html.png": "/images/html.png",
     "/images/laravel.png": "/images/laravel.png",
     "/images/logo.png": "/images/logo.png",
     "/images/logo_white.png": "/images/logo_white.png",
+    "/images/owl.png": "/images/owl.png",
     "/images/php.png": "/images/php.png",
     "/images/Vector.png": "/images/Vector.png",
     "/fonts/utm_bryantlg-webfont.woff": "/fonts/utm_bryantlg-webfont.woff",
@@ -21,6 +20,5 @@
     "/webfonts/fa-solid-900.ttf": "/webfonts/fa-solid-900.ttf",
     "/webfonts/fa-solid-900.woff2": "/webfonts/fa-solid-900.woff2",
     "/webfonts/fa-v4compatibility.ttf": "/webfonts/fa-v4compatibility.ttf",
-    "/webfonts/fa-v4compatibility.woff2": "/webfonts/fa-v4compatibility.woff2",
-    "/images/owl.png": "/images/owl.png"
+    "/webfonts/fa-v4compatibility.woff2": "/webfonts/fa-v4compatibility.woff2"
 }
