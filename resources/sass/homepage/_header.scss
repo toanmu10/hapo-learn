@@ -92,16 +92,18 @@
 }
 
 @media (max-width: 739px) {
-  .navbar-img {
-    display: flex;
-    height: 54px;
-    align-items: center;
-    margin-left: 5px;
-    padding: 0;
-
-    .logo-image {
-      width: 150px;
-      height: 26px;
+  .navbar-block {
+    .navbar-img {
+      display: flex;
+      height: 54px;
+      align-items: center;
+      margin-left: 5px;
+      padding: 0;
+  
+      .logo-image {
+        width: 150px;
+        height: 26px;
+      }
     }
   }
 
