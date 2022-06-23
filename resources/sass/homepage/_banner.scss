@@ -7,7 +7,7 @@
 
 .title {
   position: absolute;
-  top: 308px;
+  top: 278px;
   left: 26px;
 }
 
@@ -18,22 +18,22 @@
   font-size: 50px;
   line-height: 61px;
   color: $text-blue;
-  width: 36rem;
-}
+  width: 570px;
 
-.title-extra {
-  display: flex;
-  font-family: $main-font;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 61px;
-  color: $text-blue;
-}
+  .title-extra {
+    display: flex;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    color: $text-blue;
 
-.title-img {
-  margin: 0 4px;
-  height: 61px;
+    .title-img {
+      margin: 0 4px;
+      height: 61px;
+    }
+  }
 }
 
 .title-content{
@@ -44,7 +44,8 @@
   line-height: 25px;
   letter-spacing: -0.05em;
   color: $main-text-color;
-  width: 16rem;
+  width: 250px;
+  margin-top: 20px;
 }
 
 .btn-start {
@@ -66,15 +67,10 @@
 
 @media  (min-width: 740px) and  (max-width: 1023px) {
   .background-banner {
-    background-image: url('/images/Hapo_Learn_banner_tablet.png');
+    background-image: url('/images/Hapo_Learn_banner_tablet.png'), linear-gradient(0, $bg-banner, $white-text-color);
     height: 496px;
     background-repeat: no-repeat;
     background-size: 100%;
-  }
-
-  .title-img {
-    margin: 19px 2px 0 2px;
-    height: 24px;
   }
 
   .title {
@@ -84,13 +80,18 @@
 
   .banner-title {
     font-size: 30px;
+
+    .title-extra {
+      font-size: 30px;
+
+      .title-img {
+        margin: 19px 2px 0 2px;
+        height: 24px;
+      }
+    }
   }
 
-  .title_extra {
-    font-size: 30px;
-  }
-
-  .title_content {
+  .title-content {
     font-size: 16px;
   }
 
@@ -99,19 +100,19 @@
     width: 200px;
     height: 40px;
   }
+
+  .mt-40 {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 739px) {
-  .row-color {
-    background-image: linear-gradient(0, #E5E5E5, #ffff);
-  }
-
   .background-banner {
-    background-image: url('/images/Hapo_Learn_banner_mobile.png');
+    background-image: url('/images/Hapo_Learn_banner_mobile.png'), linear-gradient(0, $bg-banner, $white-text-color);
     height: 200px;
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 24vh !important;
+    min-height: 24vh;
   }
 
   .title {
@@ -120,26 +121,26 @@
     left: 0px;
     margin: 16px 0 116px 0;
     text-align: left;
-
-    .banner-title {
-      font-style: normal;
-      font-weight: 300;
-      font-size: 25px;
-      line-height: 32px;
-      width: 18rem;
-      margin-left: 20%;
-    }
   }
 
-  .title-img {
-    margin: 0px 2px 0 2px;
-    height: 23px;
-  }
-
-  .title-extra {
-    display: inline;
+  .banner-title {
+    font-style: normal;
+    font-weight: 300;
     font-size: 25px;
-    line-height: 30px;  
+    line-height: 32px;
+    width: 18rem;
+    margin-left: 20%;
+
+    .title-extra {
+      display: inline;
+      font-size: 25px;
+      line-height: 30px; 
+      
+      .title-img {
+        margin: 0px 2px 0 2px;
+        height: 23px;
+      }
+    }
   }
 
   .title-content {
@@ -151,7 +152,7 @@
     width: 30px;
     
     .title-content--extra {
-      margin-left: 20%;
+      margin-left: 12%;
     }
   }
 
