@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
     "/images/hapo_banner.png": "/images/hapo_banner.png",
     "/images/Hapo_Learn_banner_mobile.png": "/images/Hapo_Learn_banner_mobile.png",
     "/images/Hapo_Learn_banner_tablet.png": "/images/Hapo_Learn_banner_tablet.png",
@@ -19,8 +20,5 @@
     "/webfonts/fa-solid-900.ttf": "/webfonts/fa-solid-900.ttf",
     "/webfonts/fa-solid-900.woff2": "/webfonts/fa-solid-900.woff2",
     "/webfonts/fa-v4compatibility.ttf": "/webfonts/fa-v4compatibility.ttf",
-    "/webfonts/fa-v4compatibility.woff2": "/webfonts/fa-v4compatibility.woff2",
-    "/css/app.css": "/css/app.css",
-    "/images/logo_white.png": "/images/logo_white.png",
-    "/images/Vector.png": "/images/Vector.png"
+    "/webfonts/fa-v4compatibility.woff2": "/webfonts/fa-v4compatibility.woff2"
 }
