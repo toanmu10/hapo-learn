@@ -20,7 +20,6 @@
     @include('layouts.header')
     <main>
         @yield('content')
-        @yield('content-course')
     </main>
     @include('layouts.footer')
 

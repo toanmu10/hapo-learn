@@ -18,7 +18,7 @@
   font-size: 50px;
   line-height: 61px;
   color: $text-blue;
-  width: 570px;
+  width: 540px; 
 
   .title-extra {
     display: flex;
@@ -51,7 +51,7 @@
 .btn-start {
   background: $main-bg-color;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 0;
+  border: none;
   border-radius: 35px;
   font-family: $main-font;
   font-style: normal;
@@ -65,7 +65,7 @@
   height: 70px;
 }
 
-@media  (min-width: 740px) and  (max-width: 1023px) {
+@media (min-width: 740px) and (max-width: 1023px) {
   .background-banner {
     background-image: url('/images/Hapo_Learn_banner_tablet.png'), linear-gradient(0, $bg-banner, $white-text-color);
     height: 496px;
@@ -152,7 +152,7 @@
     width: 30px;
     
     .title-content--extra {
-      margin-left: 12%;
+      margin-left: 20%;
     }
   }
 
