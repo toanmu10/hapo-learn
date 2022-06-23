@@ -18,7 +18,7 @@
   font-size: 50px;
   line-height: 61px;
   color: $text-blue;
-  width: 540px; 
+  width: 580px; 
 
   .title-extra {
     display: flex;
@@ -36,7 +36,7 @@
   }
 }
 
-.title-content{
+.title-content {
   font-family: $main-font;
   font-style: normal;
   font-weight: 400;
@@ -51,7 +51,7 @@
 .btn-start {
   background: $main-bg-color;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: none;
+  border: 0;
   border-radius: 35px;
   font-family: $main-font;
   font-style: normal;
