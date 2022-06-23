@@ -1,267 +1,171 @@
-.banner {
-  margin-top: 100px;
-}
-
-.banner-main {
-  height: 655px;
-  background-image: url('/images/hapo_banner.png');
+.background-banner {
+  background-image:  url('/images/hapo_banner.png'), linear-gradient(0, $bg-banner, $white-text-color);
   background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  position: relative;
+  background-size: 100%;
+  height: 820px;
 }
 
-.banner-content {
-  margin-left: 60px;
+.title {
   position: absolute;
+  top: 308px;
+  left: 26px;
 }
 
-.banner-heading {
-  max-width: 570px;
-  line-height: 1.3;
+.banner-title {
   font-family: $main-font;
+  font-style: normal;
+  font-weight: 300;
   font-size: 50px;
-
-  .banner-slogan {
-    color: #11114E;
-    font-weight: 400;
-    font-family: $main-font;
-  }
-
-  .slogan-title {
-    font-weight: 700;
-    font-family: $main-font;
-  }
+  line-height: 61px;
+  color: $text-blue;
+  width: 36rem;
 }
 
-.banner-text {
-  margin-top: 20px;
-
-  .paragraph {
-    font-size: 20px;
-    color: $main-text-color;
-    font-weight: 400;
-    max-width: 300px;
-  }
-}
-
-.banner-logo {
-  width: 395px;
-}
-
-.banner-button {
-  width: 315px;
-  height: 70px;
+.title-extra {
+  display: flex;
   font-family: $main-font;
-  margin-top: 26px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  color: $text-blue;
+}
+
+.title-img {
+  margin: 0 4px;
+  height: 61px;
+}
+
+.title-content{
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.05em;
+  color: $main-text-color;
+  width: 16rem;
+}
+
+.btn-start {
   background: $main-bg-color;
-  color: $white-text-color;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0;
+  border-radius: 35px;
+  font-family: $main-font;
+  font-style: normal;
   font-weight: 700;
   font-size: 30px;
-  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 35px;
-  border: 0;
-}
-
-.bg-banner {
-  width: 100%;
-  height: 150px;
-  background-color: $bg-banner;
-}
-
-@media (max-width: 768px) {
-  .banner {
-    margin-top: 80px;
-  }
-
-  .banner-main {
-    width: 100%;
-    height: 100vh;
-    background-size: contain;
-  }
-
-  .banner-content {
-    top: 60px ;
-    margin-left: 20px;
-  }
-
-  .banner-heading {
-    .banner-slogan {
-      font-size: 30px;
-      max-width: 341px;
-    }
-
-    .slogan-title {
-      font-weight: 700;
-    }
-  }
-
-  .banner-text {
-    .paragraph {
-      font-size: 16px;
-      max-width: 230px;
-    }
-  }
-
-  img {
-    width: 30px;
-  }
-
-  .banner-button {
-    width: auto ;
-    height: auto;
-    font-size: 16px;
-    padding: 6px 30px 7px 30px;
-    margin-top: 20px;
-  } 
-
-  .bg-banner {
-    margin-top: -675px;
-    height: 116px;
-  }
-}
-
-@media (max-width: 480px) {
-  .banner {
-    margin-top: 65px;
-  }
-
-  .banner-main {
-    justify-content: center;
-  }
-
-  .banner-content {
-    top: 190px ;
-
-    .banner-heading {
-      max-width: 257px;
-
-      .banner-slogan {
-        font-size: 22px;
-      }
-    }
-
-    .banner-button {
-      padding: 6px 60px 7px 60px;
-    }
-  }
-
-  .bg-banner {
-    margin-top: -490px;
-    height: 80px;
-  }
-}
-.nav-test {
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  top: 0;
-}
-
-.navbar-brand {
-  margin-left: 25px;
-}
-
-.logo-image {
-  width: 340px;
+  line-height: 37px;
+  letter-spacing: -0.05em;
+  color: $white-text-color;
+  margin-top: 26px;
+  width: 377px;
   height: 70px;
 }
 
-.nav-item {
-  margin: 0 35px;
-  text-transform: uppercase;
-
-  &:hover {
-    border-radius: 17px;
-    background-color: $main-bg-color;
-  }
-}
-
-.navbar-light {
-  .navbar-nav {
-    display: flex;
-    justify-content: flex-end;
-
-    .nav-link {
-      font-weight: 700;
-      color: $main-text-color; 
-      font-weight: 600;
-
-      &:hover {
-        color: white !important;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {  
-  .nav-test {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    top: 0;
+@media  (min-width: 740px) and  (max-width: 1023px) {
+  .background-banner {
+    background-image: url('/images/Hapo_Learn_banner_tablet.png');
+    height: 496px;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
-  .navbar-brand {
-    margin-left: 21px;
+  .title-img {
+    margin: 19px 2px 0 2px;
+    height: 24px;
   }
 
-  .logo-image {
-    width: 224px;
-    height: 51px;
+  .title {
+    top: 153px;
+    left: 16px;
   }
 
-  .nav-item {
-    &:hover {
-      border-radius: 17px;
-      background-color: white;
-    }
+  .banner-title {
+    font-size: 30px;
   }
 
-  .nav-link {
-    font-weight: 700;
-    padding-top: 20px;
-    border-bottom: 1px solid #F1F1F1;
+  .title_extra {
+    font-size: 30px;
+  }
+
+  .title_content {
     font-size: 16px;
-    line-height: 21.9px;
+  }
 
-    &:hover {
-      color: $main-bg-color !important ;
-    }
+  .btn-start {
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
   }
 }
 
-@media (max-width: 480px) {
-  .navbar-brand {
-    margin-left: 21px;
+@media (max-width: 739px) {
+  .row-color {
+    background-image: linear-gradient(0, #E5E5E5, #ffff);
   }
 
-  .logo-image {
-    width: 130px;
-    height: 27px;
+  .background-banner {
+    background-image: url('/images/Hapo_Learn_banner_mobile.png');
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 24vh !important;
   }
 
-  .navbar-toggler-icon {
-    font-size: 20px;
-  }
+  .title {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 16px 0 116px 0;
+    text-align: left;
 
-  .nav-item {
-    &:hover {
-      border-radius: 17px;
-      background-color: white;
+    .banner-title {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 32px;
+      width: 18rem;
+      margin-left: 20%;
     }
   }
 
-  .nav-link {
-    font-weight: 700;
-    padding-top: 20px;
-    border-bottom: 1px solid #F1F1F1;
+  .title-img {
+    margin: 0px 2px 0 2px;
+    height: 23px;
+  }
+
+  .title-extra {
+    display: inline;
+    font-size: 25px;
+    line-height: 30px;  
+  }
+
+  .title-content {
+    display: inline;
+    margin-top: -16px;
     font-size: 16px;
-    line-height: 22px;
-
-    &:hover {
-      color: $main-bg-color !important ;
+    width: 199px;
+    margin-left: 20%;
+    width: 30px;
+    
+    .title-content--extra {
+      margin-left: 20%;
     }
   }
-} 
+
+  .start {
+    text-align: center;
+  }
+
+  .btn-start {
+    font-size: 16px;
+    width: 250px;
+    height: 46px;
+  }
+
+  .img-custom {
+    height: 163px;
+  }
+}

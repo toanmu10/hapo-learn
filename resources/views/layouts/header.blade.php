@@ -1,24 +1,26 @@
-<header class="main-header container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-white flex-sb nav-test">
-        <a class="navbar-brand" href="#">
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-order">
+        <a class="navbar-brand navbar-img" href="#">
             <img class="logo-image" src="{{ asset('images/logo.png') }}" alt="HapoLearn Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon nav_icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto w-100">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav  w-100 mr-44px">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Home </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">all courses</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">login/register</a>
+                <li class="nav-item ">
+                    <a class="nav-link " href="#"  aria-haspopup="true" aria-expanded="false">
+                        login/register
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">profile</a>
+                    <a class="nav-link " href="#">profile</a>
                 </li>
             </ul>
         </div>
