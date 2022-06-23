@@ -1,5 +1,5 @@
 .border-course {
-  border-radius: 1.25rem !important;
+  border-radius: 1.25rem;
   border: 0;
 }
   
@@ -39,8 +39,8 @@
 }  
 
 .rounded-top-1 {
-  border-top-left-radius: 1.25rem ;
-  border-top-right-radius: 1.25rem ;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .card-content,
@@ -91,11 +91,11 @@
   line-height: 98px;
   letter-spacing: -0.02em;
   color: $text-blue;
-}
-  
-.other-courses-text {
-  display: inline;
-  border-bottom: 3px solid $main-bg-color;
+
+  .other-courses-text {
+    display: inline;
+    border-bottom: 3px solid $main-bg-color;
+  }
 }
   
 .other-card-position {
@@ -168,7 +168,7 @@
     height: 200px;
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 24vh !important;
+    min-height: 24vh;
   }
 
   .title {
@@ -193,13 +193,13 @@
     margin-left: 12%;
   }
 
-  .title_extra {
+  .title-extra {
     display: inline;
     font-size: 25px;
     line-height: 30px;  
   }
 
-  .title_content {
+  .title-content {
     display: inline;
     margin-top: -16px;
     font-size: 16px;

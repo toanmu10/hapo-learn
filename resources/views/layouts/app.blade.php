@@ -20,8 +20,8 @@
     @include('layouts.header')
     <main>
         @yield('content')
-        @yield('content-course')
     </main>
+    @include('layouts.why_banner')
     @include('layouts.footer')
 
     <script src="{{ asset('js/app.js') }}"></script>

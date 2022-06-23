@@ -31,7 +31,7 @@
 <section class="course">
     <div class="container">
         <div class="row ">
-            <div class="col-lg-4 card-distance ">
+            <div class="col-lg-4 card-distance mt-40 ">
                 <div class="card border-course card-position card-shadow" >
                     <div class="row no-gutters">
                         <div class="img-custom card-one col-lg-12 col-md-4 rounded-top-1"></div>
