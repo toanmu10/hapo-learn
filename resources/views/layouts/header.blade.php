@@ -4,7 +4,7 @@
             <img class="logo-image" src="{{ asset('images/logo.png') }}" alt="HapoLearn Logo">
         </a>
         <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon nav-menu-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav w-100 navbar-list">
