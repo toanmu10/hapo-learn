@@ -119,5 +119,7 @@
             </div>
         </div>
     </div>
-</section>   
+</section>  
+
+<button class="btn btn-primary btn-jquery" id="jquery-btn">click</button>
 @endsection
