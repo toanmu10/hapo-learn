@@ -1,5 +1,5 @@
 .border-course {
-  border-radius: 1.25rem;
+  border-radius: 15px;
   border: 0;
 }
   
@@ -11,36 +11,31 @@
   box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.6) ;
 }
 
-.img-custom.card-one {
-  background-image: url('/images/html.png');
+.img-custom.card-one, .img-custom.card-two, .img-custom.card-three {
   background-position: center;
   background-size: auto auto;
-  background-color: #3F6185;
   background-repeat: no-repeat;
-  height: 13.5rem;
+  height: 220px;
+}
+
+.img-custom.card-one {
+  background-image: url('/images/html.png');
+  background-color: #3F6185;
 }  
 
 .img-custom.card-two {
   background-image: url('/images/laravel.png');
-  background-position: center;
-  background-size: auto auto;
   background-color: #DC594C;
-  background-repeat: no-repeat;
-  height: 13.5rem;
 }  
  
 .img-custom.card-three {
   background-image: url('/images/php.png');
-  background-position: center;
-  background-size: auto auto;
   background-color: #556598;
-  background-repeat: no-repeat;
-  height: 13.5rem;
 }  
 
 .rounded-top-1 {
   border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .card-content,
@@ -74,7 +69,7 @@
   
 .btn-course {
   background: $main-bg-color;
-  box-shadow: inset 0px 1.5px 2px #6F8710;
+  box-shadow: inset 0px 1.5px 2px $main-bg-color;
   border-radius: 22px;
   font-family: $main-font;
   font-style: normal;
@@ -107,7 +102,7 @@
   font-size: 40px;
   line-height: 49px;
   letter-spacing: -0.02em;
-  color: #90AB26;
+  color: $main-bg-color;
   margin-top: 60px;
   margin-bottom: 84px;
 }
@@ -143,8 +138,8 @@
   
   .rounded-top-1 {
     border-top-right-radius: 0 ;
-    border-top-left-radius: 1.25rem;
-    border-bottom-left-radius: 1.25rem;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
   
   .card-end {
@@ -160,7 +155,7 @@
 
   @media (max-width: 739px) {
   .row-color {
-    background-image: linear-gradient(0, #E5E5E5, #ffff);
+    background-image: linear-gradient(0, $bg-banner, $white-text-color);
   }
 
   .background-banner {
@@ -175,53 +170,6 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 0;
-  }
-
-  .title {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    margin: 16px 0 116px 0;
-    text-align: left;
-  }
-
-  .title-img {
-    margin: 0px 2px 0 2px;
-    height: 23px;
-  }
-
-  .banner-title {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 32px;
-    width: 17rem;
-    margin-left: 12%;
-  }
-
-  .title-extra {
-    display: inline;
-    font-size: 25px;
-    line-height: 30px;  
-  }
-
-  .title-content {
-    display: inline;
-    margin-top: -16px;
-    font-size: 16px;
-    width: 199px;
-    margin-left: 12%;
-    width: 30px;
-  }
-
-  .start {
-    text-align: center;
-  }
-
-  .btn-start {
-    font-size: 16px;
-    width: 250px;
-    height: 46px;
   }
 
   .img-custom {

@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="col-lg-4 card-distance">
-                <div class="card border-course  card-shadow" >
+                <div class="card border-course card-shadow" >
                     <div class="row no-gutters">
                     <div class="img-custom card-two col-lg-12 col-md-4 rounded-top-1"></div>
                         <div class="card-body col-lg-12 col-md-8 card-content">
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="col-lg-4 card-distance card-end">
-                <div class="card border-course  card-shadow" >
+                <div class="card border-course card-shadow" >
                     <div class="row no-gutters">
                         <div class="img-custom card-three col-lg-12 col-md-4 rounded-top-1"></div>
                         <div class="card-body col-lg-12 col-md-8 card-content">
