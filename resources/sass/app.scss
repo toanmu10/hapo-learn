@@ -4,22 +4,18 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-// Variables
-@import 'variables';
-@import 'mixin';
-
-// Variables
-@import 'homepage/header';
-
-@import 'homepage/footer';
-
-@import 'homepage/banner';
-
-// @import 'homepage/content';
-
 // Font-Awesome
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
+// Variables
+@import 'variables';
+
+// Variables
+@import 'homepage/header';
+// banner
+@import 'homepage/banner';
+// footer
+@import 'homepage/footer';

@@ -2,23 +2,30 @@
 
 @section('content')
 
-<section>
-    <div class= "banner">
-        <div class="banner__content">
-            <div class="banner__content__title">
-                <h1>Learn Anytime, Anywhere</h1>
-                <h1>at HapoLearn<img class="logo-cu" src="{{ asset('images/cu.png') }}" alt="HapoLearn Logo">!</h1>
+<section class="background-banner"></section>
+<div class="container-fluid">
+    <div class="row row-color">
+        <div class="col-md-5 title">
+            <div class="banner-title">
+                Learn Anytime, Anywhere
+                <div class="title-extra">
+                    at HapoLearn
+                    <img src="/images/owl.png" alt="haposhoft" class="title-img">
+                    !
+                </div>
             </div>
-            <div class="banner__content__content">
-                <p>Interactive lessons, "on-the-go" practice, peer support</p>
+            <div class="title-content">
+                Interactive lessons, "on the go" 
+                <div class= "title-content--extra">
+                    practice, peer support
+                </div>
             </div>
-            <button class="btn-start">Start learn now !</button>
-        </div>  
-    </div> 
-    <div class="bg"></div>
-</section> 
-
-<section class="example">
-    
-</section>
+            <div class="start">
+                <button class="btn-start">
+                    Start Learning Now!
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
