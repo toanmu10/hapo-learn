@@ -67,11 +67,6 @@
                     </div>
                 </div>
             </div>
-            <div class="start">
-                <button class="btn-start">
-                    Start Learning Now!
-                </button>
-            </div>
         </div>
         <!-- Other courses -->
         <div class="row justify-content-center">
