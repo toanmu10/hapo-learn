@@ -129,3 +129,40 @@
     }
   }
 }
+
+@media (max-width: 739px) {
+  .navbar-block {
+    .navbar-img {
+      display: flex;
+      height: 54px;
+      align-items: center;
+      margin-left: 5px;
+      padding: 0;
+  
+      .logo-image {
+        width: 150px;
+        height: 26px;
+      }
+    }
+  }
+
+  .navbar-light {
+    .navbar-nav {
+      padding-bottom: 15px;
+  
+      .nav-link {
+        margin-left: 0;  
+        text-align: left;
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        padding: 10px 0 30px 10px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: $white-text-color;
+          color: $main-bg-color;
+        }
+      }  
+    }
+  }
+}

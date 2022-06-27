@@ -117,7 +117,19 @@
                 View All Our Courses 
                 <i class="fa-solid fa-arrow-right"></i>
             </div>
+            </div>
+            <div class="title-content">
+                Interactive lessons, "on the go" 
+                <div class= "title-content--extra">
+                    practice, peer support
+                </div>
+            </div>
+            <div class="start">
+                <button class="btn-start">
+                    Start Learning Now!
+                </button>
+            </div>
         </div>
     </div>
-</section>
+</div>
 @endsection
