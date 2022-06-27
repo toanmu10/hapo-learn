@@ -14,16 +14,14 @@
   }
 }
 
-.navbar-nav {
-  justify-content: flex-end;
-}
-
 .navbar-list {
   margin-right: 44px;
 }
 
 .navbar-light {
   .navbar-nav {
+    justify-content: flex-end;
+
     .nav-link {
       font-style: normal;
       font-weight: 700;
@@ -166,3 +164,4 @@
     }
   }
 }
+
