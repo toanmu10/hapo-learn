@@ -7,7 +7,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav w-100 nav-list">
+            <ul class="navbar-nav w-100 navbar-list">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Home </a>
                 </li>
