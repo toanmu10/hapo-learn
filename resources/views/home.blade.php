@@ -4,7 +4,7 @@
 
 <section class="background-banner">
     <div class="container-fluid">
-        <div class="row row-color">
+        <div class="row">
             <div class="col-md-5 title">
                 <div class="banner-title">
                     Learn Anytime, Anywhere
