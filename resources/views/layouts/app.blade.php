@@ -21,6 +21,8 @@
     <main>
         @yield('content')
     </main>
+    @include('layouts.why_banner')
+    @include('layouts.feedback')    
 
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
