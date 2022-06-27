@@ -1,20 +1,14 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/images/avatar.png": "/images/avatar.png",
-    "/images/bg_why.png": "/images/bg_why.png",
-    "/images/bg_why_tablet.png": "/images/bg_why_tablet.png",
     "/images/hapo_banner.png": "/images/hapo_banner.png",
     "/images/Hapo_Learn_banner_mobile.png": "/images/Hapo_Learn_banner_mobile.png",
     "/images/Hapo_Learn_banner_tablet.png": "/images/Hapo_Learn_banner_tablet.png",
     "/images/html.png": "/images/html.png",
-    "/images/laptop.png": "/images/laptop.png",
-    "/images/laptop_tablet.png": "/images/laptop_tablet.png",
     "/images/laravel.png": "/images/laravel.png",
     "/images/logo.png": "/images/logo.png",
     "/images/owl.png": "/images/owl.png",
     "/images/php.png": "/images/php.png",
-    "/images/rotate_lap.png": "/images/rotate_lap.png",
     "/fonts/utm_bryantlg-webfont.woff": "/fonts/utm_bryantlg-webfont.woff",
     "/fonts/utm_bryantlg-webfont.woff2": "/fonts/utm_bryantlg-webfont.woff2",
     "/fonts/UTM_BryantLG.ttf": "/fonts/UTM_BryantLG.ttf",
@@ -26,5 +20,5 @@
     "/webfonts/fa-solid-900.ttf": "/webfonts/fa-solid-900.ttf",
     "/webfonts/fa-solid-900.woff2": "/webfonts/fa-solid-900.woff2",
     "/webfonts/fa-v4compatibility.ttf": "/webfonts/fa-v4compatibility.ttf",
-    "/webfonts/fa-v4compatibility.woff2": "/webfonts/fa-v4compatibility.woff2",
+    "/webfonts/fa-v4compatibility.woff2": "/webfonts/fa-v4compatibility.woff2"
 }

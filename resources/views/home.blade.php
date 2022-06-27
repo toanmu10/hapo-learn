@@ -68,11 +68,6 @@
                     </div>
                 </div>
             </div>
-            <div class="start">
-                <button class="btn-start">
-                    Start Learning Now!
-                </button>
-            </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-6 other-courses-title">
