@@ -14,16 +14,14 @@
   }
 }
 
-.navbar-nav {
-  justify-content: flex-end;
-}
-
 .navbar-list {
   margin-right: 44px;
 }
 
 .navbar-light {
   .navbar-nav {
+    justify-content: flex-end;
+    
     .nav-link {
       font-style: normal;
       font-weight: 700;
@@ -71,7 +69,7 @@
 
         &:hover {
           cursor: pointer;
-          background-color:#FEFFFF;
+          background-color: $white-text-color;
           color: $main-bg-color;
         }
       }  
