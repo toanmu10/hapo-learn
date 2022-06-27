@@ -120,4 +120,127 @@
         </div>
     </div>
 </section>
+<section class="why-bg">
+    <div class="container-fluid ">
+        <div class="row align-items-center ">
+            <div class="col-lg-4 col-md-6 offset-lg-1 offset-md-0 why-content ">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h4 class="why-title">Why HapoLearn?</h4>
+                        <div class="rotate-laptop">
+                            <img src="{{ asset('images/rotate_lap.png') }}">
+                        </div>
+                    </div>
+                </div>
+                <div class="why-list">
+                    <div class="why-item">
+                        <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go" practice, peer support.</span>
+                    </div>
+                    <div class="why-item">
+                        <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go" practice, peer support.</span>
+                    </div>
+                    <div class="why-item">
+                        <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go" practice, peer support.</span>
+                    </div>
+                    <div class="why-item">
+                        <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go" practice, peer support.</span>
+                    </div>
+                    <div class="why-item">
+                        <i class="fa-solid fa-circle-check"></i><span class="why-text">Interactive lessons, "on-the-go" practice, peer support.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <img src="{{ asset('images/laptop.png') }}" alt="why" class="why-img">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="feedback">
+    <div class="feedback-heading">
+        <div class="title">Feedback</div>
+        <div class="description">What other students turned professionals have to say about us after learning with us and reaching their goals</div>
+    </div>
+    <div class="container">
+        <div class="slider">
+            <div class="slider-item">
+                <div class="slider-slogan">
+                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                </div>
+                <div class="slider-user">
+                    <img src="/images/avatar.png" alt="" class="user-avatar">
+                    <div class="user-info">
+                        <div class="user-name">Hoang Anh Nguyen</div>
+                        <div class="user-language">PHP</div>
+                        <div class="user-stars">
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-regular fa-star user-star-icon"></i>
+                            <i class="fa-regular fa-star user-star-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider-slogan">
+                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                </div>
+                <div class="slider-user">
+                    <img src="/images/avatar.png" alt="" class="user-avatar">
+                    <div class="user-info">
+                        <div class="user-name">Hoang Anh Nguyen</div>
+                        <div class="user-language">PHP</div>
+                        <div class="user-stars">
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-regular fa-star-half-stroke user-star-icon"></i>
+                            <i class="fa-regular fa-star user-star-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider-slogan">
+                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                </div>
+                <div class="slider-user">
+                    <img src="/images/avatar.png" alt="" class="user-avatar">
+                    <div class="user-info">
+                        <div class="user-name">Hoang Anh Nguyen</div>
+                        <div class="user-language">PHP</div>
+                        <div class="user-stars">
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-regular fa-star-half-stroke user-star-icon"></i>
+                            <i class="fa-regular fa-star user-star-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="slider-slogan">
+                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                </div>
+                <div class="slider-user">
+                    <img src="/images/avatar.png" alt="" class="user-avatar">
+                    <div class="user-info">
+                        <div class="user-name">Hoang Anh Nguyen</div>
+                        <div class="user-language">PHP</div>
+                        <div class="user-stars">
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-solid fa-star user-star-icon"></i>
+                            <i class="fa-regular fa-star-half-stroke user-star-icon"></i>
+                            <i class="fa-regular fa-star user-star-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
