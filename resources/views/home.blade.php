@@ -243,4 +243,35 @@
         </div>
     </div>
 </section>
+<section class="container-fluid statistic">
+    <div class="statistic-slogan">
+        <div class="statistic-title">
+            Become a member of our growing community!
+        </div>
+        <button class="btn-begin">
+            Start Learning Now!
+        </button>
+    </div>
+    <div class="row statistic-statistical">
+        <div class="col-lg-12">
+            <p class="statistic-heading">Statistic</p>
+        </div>
+        <div class="statistic-content col-lg-12">
+            <div class="row">
+                <div class="statistic-item col-lg-4 col-md-4">
+                    <p class="statistic-name">Courses</p>
+                    <p class="statistic-quantity">1,586</p>
+                </div>
+                <div class="statistic-item col-lg-4 col-md-4">
+                    <p class="statistic-name">Lessons</p>
+                    <p class="statistic-quantity">2,689</p>
+                </div>
+                <div class="statistic-item col-lg-4 col-md-4">
+                    <p class="statistic-name">Learners</p>
+                    <p class="statistic-quantity">16,882</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection
