@@ -9,11 +9,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav w-100 navbar-list">
                 <li class="nav-item">
-<<<<<<< HEAD
                     <a class="nav-link" href="#">Home </a>
-=======
-                    <a class="nav-link" href="#">home</a>
->>>>>>> 503b85cf23d63d49bedccadd5a10ede8a4005b6a
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">all courses</a>
