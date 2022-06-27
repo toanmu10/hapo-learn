@@ -33,7 +33,7 @@
   background-color: #556598;
 }  
 
-.border-radius-top-x-15 {
+.border-radius-img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -136,9 +136,10 @@
     font-size: 50px;
   }
   
-  .border-radius-top-x-15 {
+  .border-radius-img {
     border-top-right-radius: 0 ;
     border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
   
   .card-end {
@@ -161,7 +162,7 @@
     min-height: 24vh;
   }
 
-  .border-radius-top-x-15 {
+  .border-radius-img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
