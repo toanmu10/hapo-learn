@@ -68,7 +68,6 @@
                 </div>
             </div>
         </div>
-        <!-- Other courses -->
         <div class="row justify-content-center">
             <div class="col-lg-6 other-courses-title">
                 <p class="other-courses-text">Other courses</p>
