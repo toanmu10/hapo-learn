@@ -11,7 +11,7 @@
   box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.6) ;
 }
 
-.img-custom.card-one, .img-custom.card-two, .img-custom.card-three {
+.img-custom {
   background-position: center;
   background-size: auto auto;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
   background-color: #556598;
 }  
 
-.rounded-top-1 {
+.border-radius-top-x-15 {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -136,10 +136,9 @@
     font-size: 50px;
   }
   
-  .rounded-top-1 {
+  .border-radius-top-x-15 {
     border-top-right-radius: 0 ;
     border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
   }
   
   .card-end {
@@ -166,10 +165,9 @@
     min-height: 24vh;
   }
 
-  .rounded-top-1 {
+  .border-radius-top-x-15 {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    border-bottom-left-radius: 0;
   }
 
   .img-custom {
