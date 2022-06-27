@@ -139,7 +139,8 @@
     right: 0;
   }
 
-  .slick-prev::before, .slick-next::before {
+  .slick-prev::before, 
+  .slick-next::before {
     content: "";
   }
 }
