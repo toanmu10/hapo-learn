@@ -5,7 +5,8 @@
 
 .statistic-slogan {
   background-image: url('/images/statistic_bg.png');
-  background-size: contain;
+  background-size: 100%;
+  background-repeat: no-repeat;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -13,23 +14,26 @@
   text-align: center;
 
   .statistic-title {
-    font-family: 'UTM BryantLG';
+    font-family: $main-font;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 74px;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: $white-text-color;
     width: 705px;
     margin-top: 124px;
   }
 
   .btn-begin {
-    background: #FFFFFF;
+    background: $white-text-color;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 35px;
     padding: 14px 67px 15px 67px;
     margin-top: 20px;
+    border: none;
+    color: $main-bg-color;
+    font-weight: 700;
   }
 }
 
@@ -39,50 +43,109 @@
   margin-left: 0;
   margin-right: 0;
 
-    .statistic-heading {
-      font-family: 'UTM BryantLG';
+  .statistic-heading {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    letter-spacing: -0.02em;
+    color: #11114E;
+    border-bottom: 5px solid $main-bg-color;
+    width: 279px;
+    margin: auto;
+  }
+}
+
+.statistic-content {
+  margin-top: 35px;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .statistic-item {
+    .statistic-name {
+      font-family: $main-font;
       font-weight: 700;
-      font-size: 80px;
-      line-height: 98px;
-      letter-spacing: -0.02em;
-      color: #11114E;
-      border-bottom: 5px solid #B2D235;
-      width: 279px;
-      margin: auto;
+      font-size: 60px;
+      line-height: 74px;
+      letter-spacing: -0.05em;
+      color: $main-text-color;
+    }
+
+    .statistic-quantity {
+      font-family: $main-font;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 74px;
+      letter-spacing: -0.05em;
+      color: $main-bg-color;
     }
   }
+}
 
-  .statistic-content {
-    margin-top: 35px;
-    margin-bottom: 150px;
-    margin-left: auto;
-    margin-right: auto;
-
-    .statistic-item {
-      .statistic-name {
-        font-family: 'UTM BryantLG';
-        font-weight: 700;
-        font-size: 60px;
-        line-height: 74px;
-        letter-spacing: -0.05em;
-        color: #505353;
-      }
-      .statistic-quantity {
-        font-family: 'UTM BryantLG';
-        font-weight: 700;
-        font-size: 60px;
-        line-height: 74px;
-        letter-spacing: -0.05em;
-        color: #B2D235;
-      }
-    }
-  }
 @media (min-width: 740px) and (max-width: 1023px) {
   .statistic-slogan {
     height: 280px;
-    // background-position: top center;
-    background-size: contain;
+    background-position: top center;
+    background-size: cover;
+
+    .statistic-title {
+      font-size: 35px;
+      line-height: 43px;
+      width: 402px;
+      margin-top: 53px;
+    }
+
+    .btn-begin {
+      padding: 10px 40px;
+    }
+  }
+  .statistic-statistical {
+    .statistic-heading {
+      font-size: 50px;
+      width: 175px;
+    }
+  }
+  .statistic-content {
+    .statistic-item {
+      .statistic-name,
+      .statistic-quantity {
+        font-size: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 739px) {
+  .statistic-slogan {
+    height: 182px;
+
+    .statistic-title {
+      font-size: 23px;
+      width: 291px;
+      margin-top: 20px;
+      line-height: 28px;
+    }
+
+    .btn-begin {
+      font-size: 18px;
+      padding: 8px 25px;
+    }
   }
 
+  .statistic-statistical {
+    .statistic-heading {
+      font-size: 40px;
+      width: 140px;
+    }
+  }
+  .statistic-content {
+    .statistic-item {
+      margin-top: 20px;
+
+      .statistic-name,
+      .statistic-quantity {
+        font-size: 40px;
+      }
+    }
+  } 
 }
-   
