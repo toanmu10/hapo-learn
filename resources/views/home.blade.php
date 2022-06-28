@@ -2,7 +2,8 @@
 
 @section('content')
 
-<section class="background-banner">
+<section>
+    <div class="background-banner"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-5 title">
