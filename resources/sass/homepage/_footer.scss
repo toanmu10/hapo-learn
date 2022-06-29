@@ -1,0 +1,126 @@
+.footer {
+  background-color: $main-text-color;
+  
+  .footer-logo {
+    width: 292px;
+    margin-left: -250px;
+    margin-top: 46px;
+  }
+  
+  .logo-text {
+    margin-left: -85px;
+    width: 250px;
+    text-align: left;
+  }
+
+  .contact-list {
+    margin-top: 68px;
+    text-align: left;
+  }
+  
+  .social-list {
+    display: flex;
+    margin-top: 124px;
+
+    .social-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      color: $main-text-color;
+      border-radius: 50%;
+      font-size: 24px;
+      margin-left: 34px;
+    }
+  }
+}
+
+.copy-right {
+  background-color: $bg-footer;
+}
+
+.content-mobile {
+  display: none;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+  .footer {
+    background-color: $main-text-color;
+    
+    .footer-logo {
+      width: 186px;
+      margin-left: -55px;
+      margin-top: 24px;
+    }
+
+    .logo-text {
+      font-family: $main-font;
+      font-size: 16px;
+      text-align: left;
+      margin-left: -10px;
+      width: 200px;
+    }
+  
+    .contact-list {
+      margin-top: 23px;
+      font-size: 16px;
+    }
+    
+    .social-list {
+      margin-top: 33px;
+      margin-right: 20px;
+  
+      .social-item {
+        width: 40px;
+        height: 35px;
+      }
+    }
+  }
+  
+  .content-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 739px) {
+  .content {
+    display: none;
+  }
+
+  .content-mobile {
+    display: block;
+
+    .footer-logo {
+      width: 150px;
+      margin-left: -40px;
+    }
+
+    .logo-text {
+      font-size: 14px;
+      width: 175px;
+      margin-left: 15px;
+    }
+
+    .contact-list {
+      margin-top: 30px;
+      text-align: left;
+      padding-left: 50px;
+    }
+
+    .social-list {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-top: 50px;
+
+      .social-item {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        margin-left: 18px;
+      }
+    }
+  }
+}
