@@ -198,6 +198,12 @@
 }
 
 @media (max-width: 739px) {
+  .course-list,
+  .other-course-list {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
   .card-distance {
     margin-bottom: 30px;
   }

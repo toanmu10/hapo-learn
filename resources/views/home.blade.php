@@ -5,7 +5,7 @@
 <section>
     <div class="background-banner"></div>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row row-color">
             <div class="col-md-5 title">
                 <div class="banner-title">
                     Learn Anytime, Anywhere
@@ -32,7 +32,7 @@
 </section>
 <section class="course">
     <div class="container">
-        <div class="row ">
+        <div class="row course-list">
             <div class="col-lg-4 card-distance mt-40 ">
                 <div class="card border-course card-position card-shadow" >
                     <div class="row no-gutters">
@@ -75,7 +75,7 @@
                 <p class="other-courses-text">Other courses</p>
             </div>
         </div>
-        <div class="row other-card-position ">
+        <div class="row other-card-position other-course-list">
             <div class="col-lg-4 card-distance">
                 <div class="card border-course card-shadow" >
                     <div class="row no-gutters">
