@@ -6,12 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateLessonsTable extends Migration
 {
-
-    public function programs()
-    {
-        return $this->hasMany(Program::class);
-    }
-
     public function up()
     {
         Schema::create('lessons', function (Blueprint $table) {
