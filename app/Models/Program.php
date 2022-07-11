@@ -12,13 +12,7 @@ class Program extends Model
 {
     use HasFactory, SoftDeletes;
 
-    public function lesson()
-    {
-        return $this->belongsTo(Lesson::class);
-    }
-
     protected $primaryKey = 'id';
-
     protected $table = 'programs';
 
      /**
@@ -49,4 +43,9 @@ class Program extends Model
     protected $casts = [
         //
     ];
+
+    public function lesson()
+    {
+        return $this->belongsTo(Lesson::class);
+    }
 }

@@ -12,25 +12,8 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable, SoftDeletes;
 
-    public function reviews()
-    {
-        return $this->hasMany(Review::class);
-    }
-
-    public function courses_user()
-    {
-        return $this->belongsToMany(Courses::class);
-    }
-
-    public function courses_teacher()
-    {
-        return $this->belongsToMany(Courses::class, 'teacher_course', 'user_id');
-    }
-
-    public function lessons()
-    {
-        return $this->belongsToMany(Lesson::class);
-    }
+    protected $primaryKey = 'id';
+    protected $table = 'users';
 
     /**
      * The attributes that are mass assignable.
@@ -68,4 +51,24 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+    public function courses_user()
+    {
+        return $this->belongsToMany(Courses::class);
+    }
+
+    public function courses_teacher()
+    {
+        return $this->belongsToMany(Courses::class, 'teacher_course', 'user_id');
+    }
+
+    public function lessons()
+    {
+        return $this->belongsToMany(Lesson::class);
+    }
 }

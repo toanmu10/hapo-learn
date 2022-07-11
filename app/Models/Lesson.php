@@ -11,23 +11,7 @@ class Lesson extends Model
 {
     use HasFactory, SoftDeletes;
 
-    public function programs()
-    {
-        return $this->hasMany(Program::class);
-    }
-
-    public function course()
-    {
-        return $this->belongsTo(Course::class);
-    }
-
-    public function users()
-    {
-        return $this->belongsToMany(User::class);
-    }
-
     protected $primaryKey = 'id';
-
     protected $table = 'lessons';
 
     /**
@@ -59,4 +43,19 @@ class Lesson extends Model
     protected $casts = [
         //
     ];
+
+    public function programs()
+    {
+        return $this->hasMany(Program::class);
+    }
+
+    public function course()
+    {
+        return $this->belongsTo(Course::class);
+    }
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class);
+    }
 }

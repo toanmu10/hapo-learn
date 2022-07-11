@@ -11,7 +11,6 @@ class UserCourse extends Model
 
     protected $table = 'user_course';
 
-
     /**
      * The attributes that are mass assignable.
      *

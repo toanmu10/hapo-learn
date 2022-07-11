@@ -10,28 +10,7 @@ class Course extends Model
 {
     use HasFactory, SoftDeletes;
 
-    public function lessons()
-    {
-        return $this->hasMany(Lesson::class);
-    }
-
-    public function reviews()
-    {
-        return $this->hasMany(Review::class);
-    }
-
-    public function users()
-    {
-        return $this->belongsToMany(User::class);
-    }
-
-    public function teachers()
-    {
-        return $this->belongsToMany(User::class, 'teacher_course', 'course_id');
-    }
-
     protected $primaryKey = 'id';
-
     protected $table = 'courses';
 
     /**
@@ -64,4 +43,29 @@ class Course extends Model
     protected $casts = [
         //
     ];
+
+    public function lessons()
+    {
+        return $this->hasMany(Lesson::class);
+    }
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class);
+    }
+
+    public function teachers()
+    {
+        return $this->belongsToMany(User::class, 'teacher_course', 'course_id');
+    }
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
 }
