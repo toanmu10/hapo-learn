@@ -17,6 +17,7 @@ class CreateTeacherCoursesTable extends Migration
             $table->integer('user_id');
             $table->integer('course_id');
             $table->date('teach_course_time')->nullable();
+            $table->softDeletes();
         });
     }
 
