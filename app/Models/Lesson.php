@@ -10,9 +10,6 @@ class Lesson extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $primaryKey = 'id';
-    protected $table = 'lessons';
-
     /**
      * The attributes that are mass assignable.
      *

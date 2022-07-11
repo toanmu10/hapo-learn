@@ -10,9 +10,6 @@ class Course extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $primaryKey = 'id';
-    protected $table = 'courses';
-
     /**
      * The attributes that are mass assignable.
      *

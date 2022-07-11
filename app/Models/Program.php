@@ -10,9 +10,6 @@ class Program extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $primaryKey = 'id';
-    protected $table = 'programs';
-
      /**
      * The attributes that are mass assignable.
      *

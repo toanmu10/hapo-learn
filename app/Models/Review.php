@@ -10,9 +10,6 @@ class Review extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $primaryKey = 'id';
-    protected $table = 'reviews';
-
      /**
      * The attributes that are mass assignable.
      *
