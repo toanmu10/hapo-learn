@@ -16,29 +16,11 @@ class Course extends Model
      * @var array
      */
     protected $fillable = [
-        'email',
         'photo',
         'name',
         'description',
-        'price'
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        //
-    ];
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        //
+        'price',
+        'time'
     ];
 
     public function lessons()

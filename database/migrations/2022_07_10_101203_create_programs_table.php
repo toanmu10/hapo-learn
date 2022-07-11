@@ -15,10 +15,10 @@ class CreateProgramsTable extends Migration
     {
         Schema::create('programs', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('title');
-            $table->string('description');
-            $table->string('requirement');
+            $table->string('name')->nullable();
+            $table->string('title')->nullable();
+            $table->string('description')->nullable();
+            $table->string('requirement')->nullable();
             $table->integer('lesson_id');
             $table->timestamps();
             $table->softDeletes();

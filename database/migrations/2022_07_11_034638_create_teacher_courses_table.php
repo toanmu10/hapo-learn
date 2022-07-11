@@ -16,7 +16,7 @@ class CreateTeacherCoursesTable extends Migration
         Schema::create('teacher_course', function (Blueprint $table) {
             $table->integer('user_id');
             $table->integer('course_id');
-            $table->date('teach_course_time');
+            $table->date('teach_course_time')->nullable();
         });
     }
 

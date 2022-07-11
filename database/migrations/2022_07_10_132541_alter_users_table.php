@@ -14,12 +14,12 @@ class AlterUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('avatar');
-            $table->date('date_of_birth');
-            $table->string('gender');
-            $table->string('phone');
-            $table->text('address');
-            $table->text('intro');
+            $table->string('avatar')->nullable();
+            $table->date('date_of_birth')->nullable();
+            $table->string('gender')->nullable();
+            $table->string('phone')->nullable();
+            $table->text('address')->nullable();
+            $table->text('intro')->nullable();
             $table->string('role');
         });
     }
@@ -31,6 +31,14 @@ class AlterUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('avatar');
+            $table->dropColumn('date_of_birth');
+            $table->dropColumn('gender');
+            $table->dropColumn('phone');
+            $table->dropColumn('address');
+            $table->dropColumn('intro');
+            $table->dropColumn('role');
+        });
     }
 }
