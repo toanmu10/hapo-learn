@@ -16,7 +16,6 @@ class CreateCourseTagsTable extends Migration
         Schema::create('course_tag', function (Blueprint $table) {
             $table->integer('course_id');
             $table->integer('tag_id');
-            $table->softDeletes();
         });
     }
 
