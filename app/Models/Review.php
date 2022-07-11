@@ -10,11 +10,6 @@ class Review extends Model
 {
     use HasFactory, SoftDeletes;
 
-     /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
     protected $fillable = [
         'time',
         'message',

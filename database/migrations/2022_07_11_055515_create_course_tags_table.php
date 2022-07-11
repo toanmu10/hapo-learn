@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateCourseTagsTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('course_tag', function (Blueprint $table) {
@@ -19,11 +14,6 @@ class CreateCourseTagsTable extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('course_tag');

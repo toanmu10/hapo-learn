@@ -10,11 +10,6 @@ class UserLesson extends Model
 {
     use HasFactory, SoftDeletes;
 
-     /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
     protected $fillable = [
         'user_id',
         'lesson_id',
