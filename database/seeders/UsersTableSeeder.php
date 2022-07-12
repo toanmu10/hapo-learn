@@ -1,7 +1,9 @@
 <?php
 
+namespace Database\Seeders;
+
+use App\Models\User;
 use Illuminate\Database\Seeder;
-use App\User;
 
 class UsersTableSeeder extends Seeder
 {
@@ -12,10 +14,6 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        User::create([
-            'name' => 'Hapo Tester',
-            'email' => 'test@haposoft.com',
-            'password' => bcrypt('12345678')
-        ]);
+        User::factory()->times(30)->create();
     }
 }
