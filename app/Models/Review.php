@@ -15,7 +15,6 @@ class Review extends Model
         'message',
         'rate',
         'parent_id',
-        'lesson_id',
         'course_id'
     ];
 
