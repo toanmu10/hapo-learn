@@ -18,6 +18,7 @@ class CreateUserLessonsTable extends Migration
             $table->integer('lesson_id');
             $table->date('register_lesson_time')->nullable();
             $table->softDeletes();
+            $table->primary(['user_id', 'lesson_id']);
         });
     }
 

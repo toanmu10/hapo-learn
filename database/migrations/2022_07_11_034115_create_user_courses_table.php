@@ -18,6 +18,7 @@ class CreateUserCoursesTable extends Migration
             $table->integer('course_id');
             $table->date('register_course_time')->nullable();
             $table->softDeletes();
+            $table->primary(['user_id', 'course_id']);
         });
     }
 
