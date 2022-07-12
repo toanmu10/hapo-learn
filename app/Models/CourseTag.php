@@ -9,11 +9,6 @@ class CourseTag extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = [
-        'course_id',
-        'tag_id'
-    ];
-
     protected $fillable = [
         'course_id',
         'tag_id'
