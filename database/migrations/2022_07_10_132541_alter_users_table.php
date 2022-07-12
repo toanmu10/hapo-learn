@@ -21,6 +21,7 @@ class AlterUsersTable extends Migration
             $table->text('address')->nullable();
             $table->text('intro')->nullable();
             $table->string('role')->default(0);
+            $table->softDeletes();
         });
     }
 
@@ -39,6 +40,7 @@ class AlterUsersTable extends Migration
             $table->dropColumn('address');
             $table->dropColumn('intro');
             $table->dropColumn('role');
+            $table->dropSoftDeletes();
         });
     }
 }
