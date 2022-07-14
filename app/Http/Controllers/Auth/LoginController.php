@@ -51,8 +51,8 @@ class LoginController extends Controller
         $fieldType = filter_var($request->username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
 
         if (auth()->attempt(array($fieldType => $data['username'], 'password' => $data['password']))) {
-            return redirect('/test');
+            return redirect('/');
         }
-        return redirect('/login');
+        return redirect()->back()->with('status', 'Tên đăng nhập hoặc mật khẩu không đúng');
     }
 }

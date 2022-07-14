@@ -11,6 +11,11 @@
                         Dữ liệu nhập vào không khớp, vui lòng kiểm tra lại
                     </div>
                 @endif
+                @if (session('status'))
+                <div class="alert alert-danger text-center">
+                    {{ session('status') }}
+                </div>
+                @endif
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
@@ -21,9 +26,9 @@
                             </div>
                             <div class="col-md-12">
                                 <input id="name" type="text"
-                                        class="form-control @error('name') is-invalid @enderror login-input"
+                                        class="form-control @error('username') is-invalid @enderror login-input"
                                         name="username"
-                                        value="{{ old('name') }}" autofocus>
+                                        value="{{ old('username') }}" autofocus>
                                 @error('username')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
