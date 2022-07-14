@@ -7,7 +7,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Request;
-use App\Http\Requests\StoreUserRequest;
+use App\Http\Requests\LoginRequest;
 
 class LoginController extends Controller
 {
@@ -41,18 +41,25 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    public function login(StoreUserRequest $request)
+    public function login(LoginRequest $request)
     {
-        $data = [
+
+        $credentials = [
             'username' => $request['username'],
             'password' => $request['password'],
         ];
 
         $fieldType = filter_var($request->username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
 
-        if (auth()->attempt(array($fieldType => $data['username'], 'password' => $data['password']))) {
+        $fields = [
+            $fieldType => $credentials['username'],
+            'password' => $credentials['password']
+        ];
+
+        if (Auth::attempt($fields)) {
             return redirect('/');
+        } else {
+            return redirect('/login')->with('error', 'Username hoặc password không chính xác!');
         }
-        return redirect()->back()->with('status', 'Tên đăng nhập hoặc mật khẩu không đúng');
     }
 }

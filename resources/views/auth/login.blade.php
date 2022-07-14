@@ -11,9 +11,9 @@
                         Dữ liệu nhập vào không khớp, vui lòng kiểm tra lại
                     </div>
                 @endif
-                @if (session('status'))
+                @if (session('error'))
                 <div class="alert alert-danger text-center">
-                    {{ session('status') }}
+                    {{ session('error') }}
                 </div>
                 @endif
                 <div class="card-body">
