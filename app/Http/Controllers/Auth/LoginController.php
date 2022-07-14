@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Request;
 use App\Http\Requests\StoreUserRequest;
 
-
 class LoginController extends Controller
 {
     /*
