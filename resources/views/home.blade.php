@@ -16,7 +16,7 @@
                     </div>
                 </div>
                 <div class="title-content">
-                    Interactive lessons, "on the go" 
+                    Interactive lessons, "on the go"
                     <div class= "title-content--extra">
                         practice, peer support
                     </div>
