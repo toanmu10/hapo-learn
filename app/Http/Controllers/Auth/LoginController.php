@@ -58,8 +58,7 @@ class LoginController extends Controller
 
         if (Auth::attempt($fields)) {
             return redirect('/');
-        } else {
-            return redirect('/login')->with('error', 'Username hoặc password không chính xác!');
         }
+        return redirect('/login')->with('error', 'Username hoặc password không chính xác!');
     }
 }
