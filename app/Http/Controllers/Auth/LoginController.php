@@ -5,6 +5,10 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
+use Symfony\Component\HttpFoundation\Request;
+use App\Http\Requests\StoreUserRequest;
+
 
 class LoginController extends Controller
 {
@@ -36,5 +40,20 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function login(StoreUserRequest $request)
+    {
+        $data = [
+            'username' => $request['username'],
+            'password' => $request['password'],
+        ];
+
+        $fieldType = filter_var($request->name, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
+
+        if (auth()->attempt(array($fieldType => $data['username'], 'password' => $data['password']))) {
+            return redirect('/test');
+        }
+        return redirect('/login');
     }
 }
