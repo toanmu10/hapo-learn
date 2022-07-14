@@ -24,7 +24,7 @@ class StoreUserRequest extends FormRequest
     public function rules()
     {
         return [
-            'username' => 'required',
+            'username' => 'required|max:20',
             'password' => 'required|min:6'
         ];
     }
@@ -33,6 +33,7 @@ class StoreUserRequest extends FormRequest
     {
         return [
             'username.required' => 'Vui lòng nhập username',
+            'username.max' => 'Username có tối đa nhất :min kí tự',
             'password.required' => 'Vui lòng nhập password',
             'password.min' => 'Password có ít nhất :min kí tự',
         ];
