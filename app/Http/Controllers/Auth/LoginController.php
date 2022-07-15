@@ -43,22 +43,16 @@ class LoginController extends Controller
 
     public function login(LoginRequest $request)
     {
+        $fieldType = filter_var($request->username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
 
         $credentials = [
-            'username' => $request['username'],
+            $fieldType => $request['username'],
             'password' => $request['password'],
         ];
 
-        $fieldType = filter_var($request->username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
-
-        $fields = [
-            $fieldType => $credentials['username'],
-            'password' => $credentials['password']
-        ];
-
-        if (Auth::attempt($fields)) {
+        if (Auth::attempt($credentials)) {
             return redirect('/');
         }
-        return redirect('/login')->with('error', 'Username hoặc password không chính xác!');
+        return redirect('/login')->with('error',  __('message.data_correct'));
     }
 }

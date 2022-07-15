@@ -6,11 +6,6 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header login-title">{{ __('Sign in to HapoLearn') }}</div>
-                @if($errors->any())
-                    <div class="alert alert-danger text-center">
-                        Dữ liệu nhập vào không khớp, vui lòng kiểm tra lại
-                    </div>
-                @endif
                 @if (session('error'))
                 <div class="alert alert-danger text-center">
                     {{ session('error') }}
