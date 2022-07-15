@@ -1,9 +1,12 @@
 <?php
 
 return [
-    'username.required' => 'The :attribute field is required',
-    'username.max' => 'The :attribute must not be greater than :max characters',
-    'password.required' => 'The :attribute field is required',
-    'password.min' => 'The :attribute must be at least :min characters',
+    'required' => 'The :attribute field is required',
+    'min' => [
+        'string' => 'The :attribute must be at least :min characters',
+    ],
+    'max' => [
+        'string' => 'The :attribute must not be greater than :max characters',
+    ],
     'data_correct' => 'Username or password is not specified correctly',
 ];
