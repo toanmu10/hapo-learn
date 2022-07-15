@@ -34,7 +34,6 @@ class LoginRequest extends FormRequest
         return [
             'required' => __('message.required'),
             'max' => __('message.max'),
-            'required' => __('message.required'),
             'min' => __('message.min'),
         ];
     }
