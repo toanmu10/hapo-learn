@@ -6,7 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
-use Symfony\Component\HttpFoundation\Request;
 use App\Http\Requests\LoginRequest;
 
 class LoginController extends Controller
