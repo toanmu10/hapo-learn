@@ -16,17 +16,17 @@
                 </li>
                 @if (!Auth::user())
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{route('login')}}">LOGIN/REGISTER <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{route('login')}}">login/register <span class="sr-only">(current)</span></a>
                 </li>
                 @endif
                 <li class="nav-item">
-                    <a class="nav-link" href="#">PROFILE</a>
+                    <a class="nav-link" href="#">profile</a>
                 </li>
                 @if (Auth::user())
                 <li class="nav-item active">
                     <form action="{{ route('logout') }}" method="POST">
                     @csrf
-                        <button type="submit" class="nav-link btn-logout" >LOGOUT</button>
+                        <button type="submit" class="nav-link btn-logout" >logout</button>
                     </form>
                 </li>
                 @endif

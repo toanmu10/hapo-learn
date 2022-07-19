@@ -5,7 +5,7 @@
     <div class="row justify-content-center login-location">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header login-title">{{ __('message.sign_in_to_hapolearn') }}</div>
+                <div class="card-header login-title">{{ __('attribute.sign_in_to_hapolearn') }}</div>
                 @if (session('error'))
                 <div class="alert alert-danger text-center">
                     {{ session('error') }}
@@ -17,7 +17,7 @@
                         <div class="form-group row">
                             <div class="col-md-12 d-flex">
                                 <label for="name"
-                                        class="col-md-4 col-form-label text-md-left p-0 login-label">{{ __('message.username') }}</label>
+                                        class="col-md-4 col-form-label text-md-left p-0 login-label">{{ __('attribute.username') }}</label>
                             </div>
                             <div class="col-md-12">
                                 <input id="name" type="text"
@@ -34,7 +34,7 @@
                         <div class="form-group row">
                             <div class="col-md-12 d-flex">
                                 <label for="password"
-                                        class="col-md-4 col-form-label text-md-left p-0 login-label">{{ __('message.password') }}</label>
+                                        class="col-md-4 col-form-label text-md-left p-0 login-label">{{ __('attribute.password') }}</label>
                             </div>
                             <div class="col-md-12">
                                 <input id="password" type="password"
@@ -51,18 +51,18 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-12 d-flex justify-content-between">
                                 <button type="submit" class="btn btn-submit">
-                                    {{ __('message.sign_in') }}
+                                    {{ __('attribute.sign_in') }}
                                 </button>
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link forgot-password" href="{{ route('password.request') }}">
-                                        {{ __('message.forgot_your_password') }}
+                                        {{ __('attribute.forgot_your_password') }}
                                     </a>
                                 @endif
                             </div>
                         </div>
                         <div class="form-group row justify-content-center">
                             <div class="col-md-10 sign-with">
-                                <p class="title-google">{{ __('message.sign_in_with') }}</p>
+                                <p class="title-google">{{ __('attribute.sign_in_with') }}</p>
                             </div>
                         </div>
                         <div class="form-group row justify-content-center mt-4 mb-4">
@@ -75,14 +75,14 @@
                         </div>
                         <div class="form-group row justify-content-center">
                             <div class="col-md-10 sign-with model-register">
-                                <p class="title-google title-register">{{ __('message.or_new_to_hapolearn') }}</p>
+                                <p class="title-google title-register">{{ __('attribute.or_new_to_hapolearn') }}</p>
                             </div>
                         </div>
                         <div class="from-group row mt-5 justify-content-center">
-                            <button type="submit" class="btn btn-register">
-                                {{ __('message.create_new_account') }}
-                            </button>
-                        </div>
+                        <a href="{{ route('register') }}" class="btn btn-register">
+                            {{ __('attribute.create_new_account') }}
+                        </a>
+                    </div>
                     </form>
                 </div>
             </div>
