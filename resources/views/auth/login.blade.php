@@ -79,10 +79,10 @@
                             </div>
                         </div>
                         <div class="from-group row mt-5 justify-content-center">
-                        <a href="{{ route('register') }}" class="btn btn-register">
-                            {{ __('attribute.create_new_account') }}
-                        </a>
-                    </div>
+                            <a href="{{ route('register') }}" class="btn btn-register">
+                                {{ __('attribute.create_new_account') }}
+                            </a>
+                        </div>
                     </form>
                 </div>
             </div>
