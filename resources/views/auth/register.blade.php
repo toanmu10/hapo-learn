@@ -5,7 +5,7 @@
     <div class="row justify-content-center register-location">
         <div class="col-md-6">
             <div class="card">
-                <div class="card-header register-title">{{ __('message.Sign up to HapoLearn') }}</div>
+                <div class="card-header register-title">{{ __('message.sign_up_to_hapolearn') }}</div>
                 @if (session('error'))
                 <div class="alert alert-danger text-center">
                     {{ session('error') }}
@@ -17,7 +17,7 @@
                         <div class="form-group row">
                             <div class="col-md-12 d-flex">
                                 <label for="username"
-                                        class="col-md-4 col-form-label text-md-left p-0 register-label">{{ __('message.Username') }}</label>
+                                        class="col-md-4 col-form-label text-md-left p-0 register-label">{{ __('message.username') }}</label>
                             </div>
                             <div class="col-md-12">
                                 <input id="username" type="text"
@@ -53,7 +53,7 @@
                         <div class="form-group row">
                             <div class="col-md-12 d-flex">
                                 <label for="password"
-                                        class="col-md-4 col-form-label text-md-left p-0 register-label">{{ __('message.Password') }}</label>
+                                        class="col-md-4 col-form-label text-md-left p-0 register-label">{{ __('message.password') }}</label>
                             </div>
                             <div class="col-md-12">
                                 <input id="password" type="password"
@@ -70,7 +70,7 @@
                         <div class="form-group row">
                             <div class="col-md-12 d-flex">
                                 <label for="password-confirm"
-                                        class="col-md-4 col-form-label text-md-left p-0 register-label">{{ __('message.Confirm Password') }}</label>
+                                        class="col-md-4 col-form-label text-md-left p-0 register-label">{{ __('message.confirm_password') }}</label>
                             </div>
                             <div class="col-md-12">
                                 <input id="password-confirm" type="password"
@@ -86,7 +86,7 @@
                         </div>
                         <div class="from-group row mt-5 justify-content-center">
                             <button type="submit" class="btn btn-register">
-                                {{ __('message.Sign up') }}
+                                {{ __('message.sign_up') }}
                             </button>
                         </div>
                     </form>
