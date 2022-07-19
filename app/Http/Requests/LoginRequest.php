@@ -37,4 +37,12 @@ class LoginRequest extends FormRequest
             'min' => __('message.min'),
         ];
     }
+
+    public function attributes()
+    {
+        return [
+            'username' => 'Tên tài khoản',
+            'password' => 'Mật khẩu',
+        ];
+    }
 }

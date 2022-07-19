@@ -24,9 +24,10 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
-            'username' => 'required|max:50',
-            'email' => 'required|max:50',
-            'password' => 'required|min:6|confirmed',
+            'username' => 'required|max:50|unique:users|alpha_dash',
+            'email' => 'required|max:50||unique:users|email',
+            'password' => 'required|min:6|alpha_dash',
+            'password_confirmation' => 'required|min:6|alpha_dash|same:password',
         ];
     }
 
@@ -34,18 +35,22 @@ class RegisterRequest extends FormRequest
     {
         return [
             'required' => __('message.required'),
+            'alpha_dash' => __('message.alpha_dash'),
+            'email' => __('message.email'),
             'max' => __('message.max'),
             'min' => __('message.min'),
-            'confirmed' => __('message.password_confirmed'),
+            'same' => __('message.same'),
+            'unique' => __('message.unique')
         ];
     }
 
-    // public function attributes()
-    // {
-    //     return [
-    //         'user_name' => 'Tên tài khoản',
-    //         'email' => 'Email',
-    //         'password' => 'Mật khẩu',
-    //     ];
-    // }
+    public function attributes()
+    {
+        return [
+            'username' => 'Tên tài khoản',
+            'email' => 'Email',
+            'password' => 'Mật khẩu',
+            'password_confirmation' => 'Nhập lại mật khẩu',
+        ];
+    }
 }
