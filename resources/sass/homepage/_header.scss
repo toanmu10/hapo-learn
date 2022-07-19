@@ -40,8 +40,13 @@
         background-color: $main-bg-color;
         border-radius: 24px;
       }
-    } 
+    }
   }
+}
+
+.btn-logout {
+  border: 0;
+  background-color: transparent;
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
