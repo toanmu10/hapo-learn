@@ -30,7 +30,7 @@ class HomeController extends Controller
             'countCourses' => $this->course->countCourses(),
             'countLessons' => $this->lesson->countLessons(),
             'countUsers' => $this->userCourse->countLearners()
-    ]);
+        ]);
     }
 
     public function test()
