@@ -15,7 +15,7 @@ class HomeController extends Controller
         $this->course = new Course();
         $this->review = new Review();
         $this->lesson = new Lesson();
-        $this->userCourse = new userCourse();
+        $this->userCourse = new UserCourse();
     }
     /**
      * Show the application dashboard.
