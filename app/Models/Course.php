@@ -42,4 +42,10 @@ class Course extends Model
     {
         return $this->belongsToMany(Tag::class);
     }
+
+    public function showCourses()
+    {
+        $courses = Course::limit(3)->get();
+        return $courses;
+    }
 }

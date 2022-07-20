@@ -23,7 +23,7 @@ class CourseFactory extends Factory
     public function definition()
     {
         return [
-            'photo' => $this->faker->text(191),
+            'photo' => 'https://source.unsplash.com/random',
             'name' => $this->faker->name(),
             'description' => $this->faker->text(500),
             'price' => $this->faker->numberBetween(10, 500)

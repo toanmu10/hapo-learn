@@ -3,9 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Course;
 
 class HomeController extends Controller
 {
+    public function __construct()
+    {
+        $this->course = new Course();
+    }
     /**
      * Show the application dashboard.
      *
@@ -13,7 +18,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('home', ['courses' => $this->course->showCourses()]);
     }
 
     public function test()
