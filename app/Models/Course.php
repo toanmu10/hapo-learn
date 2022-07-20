@@ -48,4 +48,10 @@ class Course extends Model
         $courses = Course::limit(3)->get();
         return $courses;
     }
+
+    public function countCourses()
+    {
+        $countCourses = Course::get()->count();
+        return $countCourses;
+    }
 }

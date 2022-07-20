@@ -30,9 +30,6 @@
                     </form>
                 </li>
                 @endif
-                <li class="nav-item">
-                    <a class="nav-link" href="#">profile</a>
-                </li>
             </ul>
         </div>
     </nav>
