@@ -15,7 +15,6 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    
     public function index()
     {
         $courses = Course::showListCourses(config('course.home_course_number'))->get();
