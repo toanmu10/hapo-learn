@@ -24,7 +24,7 @@ class UserCourse extends Model
         return $countLearners;
     }
 
-    public function scopeGroupById($countLearners, $groupByField)
+    public function scopeGroupByField($countLearners, $groupByField)
     {
         return $countLearners->groupBy($groupByField);
     }

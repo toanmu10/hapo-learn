@@ -26,11 +26,11 @@ class HomeController extends Controller
     {
         return view('home', [
             'courses' => $this->course->showCourses(3)->get(),
-            'otherCourses' => $this->course->showOtherCourses(3)->orderByName('name', 'asc')->get(),
+            'otherCourses' => $this->course->showOtherCourses(3)->orderByField('name', 'asc')->get(),
             'reviews' => $this->review->showReviews(6)->get(),
             'countCourses' => $this->course->countCourses()->get()->count(),
             'countLessons' => $this->lesson->countLessons()->get()->count(),
-            'countUsers' => $this->userCourse->countLearners('user_id')->groupById('user_id')->get()->count()
+            'countUsers' => $this->userCourse->countLearners('user_id')->groupByField('user_id')->get()->count()
         ]);
     }
 
