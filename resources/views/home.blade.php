@@ -41,8 +41,8 @@
                             <img class="border-radius-img img-course" src="{{$course['photo']}}" alt="">
                         </div>
                         <div class="card-body col-lg-12 col-md-8 card-content">
-                            <h5 class="card-title title-course" >{{$course->name}}</h5>
-                            <p class="card-text title-course-content">{{Str::limit($course->description, 100)}}</p>
+                            <h5 class="card-title title-course" >{{ $course->name }}</h5>
+                            <p class="card-text title-course-content">{{ Str::limit($course->description, 100) }}</p>
                             <a href="#" class="btn btn-course">Take This Course</a>
                         </div>
                     </div>
@@ -64,8 +64,8 @@
                             <img class="border-radius-img img-course" src="{{$course->photo}}" alt="">
                         </div>
                         <div class="card-body col-lg-12 col-md-8 card-content">
-                        <h5 class="card-title title-course">{{$otherCourse->name}}</h5>
-                            <p class="card-text title-course-content">{{Str::limit($otherCourse->description, 100)}}</p>
+                        <h5 class="card-title title-course">{{ $otherCourse->name }}</h5>
+                            <p class="card-text title-course-content">{{ Str::limit($otherCourse->description, 100) }}</p>
                             <a href="#" class="btn btn-course">Take This Course</a>
                         </div>
                     </div>
@@ -127,7 +127,7 @@
             @foreach($reviews as $review)
             <div class="slider-item">
                 <div class="slider-slogan">
-                    {{$review['message']}}
+                    {{ $review['message'] }}
                 </div>
                 <div class="slider-user">
                     @php
@@ -135,8 +135,8 @@
                     @endphp
                     <img src="/images/avatar.png" alt="" class="user-avatar">
                     <div class="user-info">
-                        <div class="user-name">{{$review->user->name}}</div>
-                        <div class="user-language">{{$review->course->name}}</div>
+                        <div class="user-name">{{ $review->user->name }}</div>
+                        <div class="user-language">{{ $review->course->name }}</div>
                         <div class="user-stars">
                         @php
                             $rates = $review->rate;
@@ -174,15 +174,15 @@
             <div class="row">
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Courses</p>
-                    <p class="statistic-quantity">{{$countCourses}}</p>
+                    <p class="statistic-quantity">{{ $countCourses }}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Lessons</p>
-                    <p class="statistic-quantity">{{$countLessons}}</p>
+                    <p class="statistic-quantity">{{ $countLessons }}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Learners</p>
-                    <p class="statistic-quantity">{{$countUsers}}</p>
+                    <p class="statistic-quantity">{{ $countUsers }}</p>
                 </div>
             </div>
         </div>

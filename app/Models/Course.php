@@ -55,9 +55,9 @@ class Course extends Model
         return $otherCourses;
     }
 
-    public function scopeOrderByName($otherCourses, $isAsc)
+    public function scopeOrderByName($otherCourses, $orderByField, $isAsc)
     {
-        return $otherCourses->orderBy('name', $isAsc);
+        return $otherCourses->orderBy($orderByField, $isAsc);
     }
 
     public function scopeCountCourses($query)
