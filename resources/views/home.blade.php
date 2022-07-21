@@ -11,7 +11,7 @@
                     Learn Anytime, Anywhere
                     <div class="title-extra">
                         at HapoLearn
-                        <img src="/images/owl.png" alt="haposhoft" class="title-img">
+                        <img src="{{ asset('images/owl.png') }}" alt="haposhoft" class="title-img">
                         !
                     </div>
                 </div>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Learners</p>
-                    <p class="statistic-quantity">{{ $countUsers }}</p>
+                    <p class="statistic-quantity">{{ $countUsers}}</p>
                 </div>
             </div>
         </div>
