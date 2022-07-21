@@ -49,10 +49,15 @@ class Course extends Model
         return $courses;
     }
 
-    public function scopeShowOtherCourses($query, $otherCourseNumber, $isAsc)
+    public function scopeShowOtherCourses($query, $otherCourseNumber)
     {
-        $otherCourses = $query->limit($otherCourseNumber)->orderBy('name', $isAsc);
+        $otherCourses = $query->limit($otherCourseNumber);
         return $otherCourses;
+    }
+
+    public function scopeOrderByName($otherCourses, $isAsc)
+    {
+        return $otherCourses->orderBy('name', $isAsc);
     }
 
     public function scopeCountCourses($query)
