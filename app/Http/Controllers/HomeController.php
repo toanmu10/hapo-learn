@@ -19,7 +19,7 @@ class HomeController extends Controller
     {
         $courses = Course::showListCourses(config('course.home_course_number'))->get();
 
-        $otherCourses = Course::showOtherCourses(config('course.home_course_number'))->orderByField(config('course.order_by_field'),config('course.sort_low_to_high'))->get();
+        $otherCourses = Course::showOtherCourses(config('course.home_course_number'))->orderByField(config('course.order_by_field'), config('course.sort_low_to_high'))->get();
 
         $countLessons = Lesson::countLessons()->count();
 
