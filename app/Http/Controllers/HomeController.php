@@ -15,11 +15,12 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    
     public function index()
     {
-        $courses = Course::showCourses(config('course.number_course'))->get();
+        $courses = Course::showListCourses(config('course.home_course_number'))->get();
 
-        $otherCourses = Course::showOtherCourses(config('course.number_course'), config('course.sort_low_to_high'))->get();
+        $otherCourses = Course::showOtherCourses(config('course.home_course_number'))->orderByField(config('course.order_by_field'),config('course.sort_low_to_high'))->get();
 
         $countLessons = Lesson::countLessons()->count();
 
@@ -27,7 +28,7 @@ class HomeController extends Controller
 
         $countUsers = UserCourse::countLearners(config('user_course.select_field'))->groupByField(config('user_course.group_by_field'))->get()->count();
 
-        $reviews = Review::showReviews(config('review.number_review'))->get();
+        $reviews = Review::showReviews(config('review.home_course_number'))->get();
 
         return view('home')->with(compact('courses', 'otherCourses', 'countLessons', 'countCourses', 'countUsers', 'reviews'));
     }

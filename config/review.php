@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'number_review' => 6
+    'home_review_number' => 6
 ];
