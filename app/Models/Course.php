@@ -49,9 +49,9 @@ class Course extends Model
         return $courses;
     }
 
-    public function showOtherCourses($otherCourseNumber, $isDesc)
+    public function showOtherCourses($otherCourseNumber, $isAsc)
     {
-        $otherCourses = Course::limit($otherCourseNumber)->orderBy('name', $isDesc)->get();
+        $otherCourses = Course::limit($otherCourseNumber)->orderBy('name', $isAsc)->get();
         return $otherCourses;
     }
 
