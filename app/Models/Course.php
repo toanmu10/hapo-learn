@@ -43,10 +43,16 @@ class Course extends Model
         return $this->belongsToMany(Tag::class);
     }
 
-    public function showCourses()
+    public function showCourses($courseNumber)
     {
-        $courses = Course::limit(3)->get();
+        $courses = Course::limit($courseNumber)->get();
         return $courses;
+    }
+
+    public function showOtherCourses($otherCourseNumber, $isDesc)
+    {
+        $otherCourses = Course::limit($otherCourseNumber)->orderBy('name', $isDesc)->get();
+        return $otherCourses;
     }
 
     public function countCourses()

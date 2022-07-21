@@ -28,9 +28,9 @@ class Review extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function showReviews()
+    public function showReviews($reviewNumber)
     {
-        $reviews = Review::limit(4)->get();
+        $reviews = Review::limit($reviewNumber)->get();
         return $reviews;
     }
 }

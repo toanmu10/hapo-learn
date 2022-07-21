@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="row other-card-position other-course-list">
-            @foreach($courses as $course)
+            @foreach($otherCourses as $otherCourse)
             <div class="col-lg-4 card-distance">
                 <div class="card border-course card-shadow" >
                     <div class="row no-gutters">
@@ -64,8 +64,8 @@
                             <img class="border-radius-img img-course" src="{{$course->photo}}" alt="">
                         </div>
                         <div class="card-body col-lg-12 col-md-8 card-content">
-                        <h5 class="card-title title-course">{{$course->name}}</h5>
-                            <p class="card-text title-course-content">{{Str::limit($course->description, 100)}}</p>
+                        <h5 class="card-title title-course">{{$otherCourse->name}}</h5>
+                            <p class="card-text title-course-content">{{Str::limit($otherCourse->description, 100)}}</p>
                             <a href="#" class="btn btn-course">Take This Course</a>
                         </div>
                     </div>
