@@ -127,13 +127,13 @@
             @foreach($reviews as $review)
             <div class="slider-item">
                 <div class="slider-slogan">
-                    {{ $review['message'] }}
+                    {{ $review->message }}
                 </div>
                 <div class="slider-user">
                     @php
                         $avatar = is_null($review->user->avatar) ? '/images/avatar.png' : $review->user->avatar;
                     @endphp
-                    <img src="/images/avatar.png" alt="" class="user-avatar">
+                    <img src="{{ asset('images/avatar.png') }}" alt="" class="user-avatar">
                     <div class="user-info">
                         <div class="user-name">{{ $review->user->name }}</div>
                         <div class="user-language">{{ $review->course->name }}</div>
