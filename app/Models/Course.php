@@ -43,21 +43,20 @@ class Course extends Model
         return $this->belongsToMany(Tag::class);
     }
 
-    public function showCourses($courseNumber)
+    public function scopeShowCourses($query, $courseNumber)
     {
-        $courses = Course::limit($courseNumber)->get();
+        $courses = $query->limit($courseNumber);
         return $courses;
     }
 
-    public function showOtherCourses($otherCourseNumber, $isAsc)
+    public function scopeShowOtherCourses($query, $otherCourseNumber, $isAsc)
     {
-        $otherCourses = Course::limit($otherCourseNumber)->orderBy('name', $isAsc)->get();
+        $otherCourses = $query->limit($otherCourseNumber)->orderBy('name', $isAsc);
         return $otherCourses;
     }
 
-    public function countCourses()
+    public function scopeCountCourses($query)
     {
-        $countCourses = Course::get()->count();
-        return $countCourses;
+        return $query;
     }
 }

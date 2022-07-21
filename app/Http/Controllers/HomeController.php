@@ -25,12 +25,12 @@ class HomeController extends Controller
     public function index()
     {
         return view('home', [
-            'courses' => $this->course->showCourses(3),
-            'otherCourses' => $this->course->showOtherCourses(3, 'asc'),
-            'reviews' => $this->review->showReviews(6),
-            'countCourses' => $this->course->countCourses(),
-            'countLessons' => $this->lesson->countLessons(),
-            'countUsers' => $this->userCourse->countLearners()
+            'courses' => $this->course->showCourses(3)->get(),
+            'otherCourses' => $this->course->showOtherCourses(3, 'asc')->get(),
+            'reviews' => $this->review->showReviews(6)->get(),
+            'countCourses' => $this->course->countCourses()->get()->count(),
+            'countLessons' => $this->lesson->countLessons()->get()->count(),
+            'countUsers' => $this->userCourse->countLearners()->get()->count()
         ]);
     }
 
