@@ -32,7 +32,7 @@ class Lesson extends Model
         return $this->belongsToMany(User::class);
     }
 
-    public function scopeCountLessons($query)
+    public function scopeCountTheNumberOfLessons($query)
     {
         return $query;
     }

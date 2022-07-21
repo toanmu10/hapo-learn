@@ -18,7 +18,7 @@ class UserCourse extends Model
         'register_course_time'
     ];
 
-    public function scopeCountLearners($query, $selectField)
+    public function scopeCountTheNumberOfLearners($query, $selectField)
     {
         $countLearners = $query->select($selectField);
         return $countLearners;

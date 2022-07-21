@@ -18,18 +18,13 @@ class HomeController extends Controller
     public function index()
     {
         $courses = Course::showListCourses(config('course.home_course_number'))->get();
-
-        $otherCourses = Course::showOtherCourses(config('course.home_course_number'))->orderByField(config('course.order_by_field'), config('course.sort_low_to_high'))->get();
-
-        $countLessons = Lesson::countLessons()->count();
-
-        $countCourses = Course::countCourses()->count();
-
-        $countUsers = UserCourse::countLearners(config('user_course.select_field'))->groupByField(config('user_course.group_by_field'))->get()->count();
-
+        $otherCourses = Course::showListCourses(config('course.home_course_number'))->orderByField(config('course.order_by_field'), config('course.sort_low_to_high'))->get();
+        $countLessons = Lesson::countTheNumberOfLessons()->count();
+        $countCourses = Course::countTheNumberOfCourses()->count();
+        $countLearners = UserCourse::countTheNumberOfLearners(config('user_course.select_field'))->groupByField(config('user_course.group_by_field'))->get()->count();
         $reviews = Review::showReviews(config('review.home_course_number'))->get();
 
-        return view('home')->with(compact('courses', 'otherCourses', 'countLessons', 'countCourses', 'countUsers', 'reviews'));
+        return view('home')->with(compact('courses', 'otherCourses', 'countLessons', 'countCourses', 'countLearners', 'reviews'));
     }
 
     public function test()

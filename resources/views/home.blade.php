@@ -182,7 +182,7 @@
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Learners</p>
-                    <p class="statistic-quantity">{{ $countUsers}}</p>
+                    <p class="statistic-quantity">{{ $countLearners}}</p>
                 </div>
             </div>
         </div>

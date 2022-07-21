@@ -49,18 +49,12 @@ class Course extends Model
         return $courses;
     }
 
-    public function scopeShowOtherCourses($query, $otherCourseNumber)
+    public function scopeOrderByField($courses, $orderByField, $isOrderBy)
     {
-        $otherCourses = $query->limit($otherCourseNumber);
-        return $otherCourses;
+        return $courses->orderBy($orderByField, $isOrderBy);
     }
 
-    public function scopeOrderByField($otherCourses, $orderByField, $isOrderBy)
-    {
-        return $otherCourses->orderBy($orderByField, $isOrderBy);
-    }
-
-    public function scopeCountCourses($query)
+    public function scopeCountTheNumberOfCourses($query)
     {
         return $query;
     }
