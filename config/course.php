@@ -2,6 +2,6 @@
 
 return [
     'home_course_number' => 3,
-    'sort_by_field' => 'asc',
+    'sort' => 'asc',
     'order_by_field' => 'name',
 ];
