@@ -17,7 +17,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $courses = Course::showListCourses(config('course.home_course_number'))->get();
+        $courses = Course::showMainCourses(config('course.home_course_number'))->get();
         $otherCourses = Course::showOtherCourses(config('course.home_course_number'))->orderByField(config('course.order_by_field'), config('course.sort'))->get();
         $countLessons = Lesson::count();
         $countCourses = Course::count();

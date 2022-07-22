@@ -43,7 +43,7 @@ class Course extends Model
         return $this->belongsToMany(Tag::class);
     }
 
-    public function scopeShowListCourses($query, $courseNumber)
+    public function scopeShowMainCourses($query, $courseNumber)
     {
         $courses = $query->limit($courseNumber);
         return $courses;
