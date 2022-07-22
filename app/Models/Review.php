@@ -28,7 +28,7 @@ class Review extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function scopeShowListReviews($query, $reviewNumber)
+    public function scopeShowMainReviews($query, $reviewNumber)
     {
         $reviews = $query->limit($reviewNumber);
         return $reviews;

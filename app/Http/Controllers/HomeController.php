@@ -22,7 +22,7 @@ class HomeController extends Controller
         $countLessons = Lesson::count();
         $countCourses = Course::count();
         $countLearners = UserCourse::selectField(config('user_course.select_field'))->groupByField(config('user_course.group_by_field'))->get()->count();
-        $reviews = Review::showListReviews(config('review.home_review_number'))->get();
+        $reviews = Review::showMainReviews(config('review.home_review_number'))->get();
 
         return view('home')->with(compact('courses', 'otherCourses', 'countLessons', 'countCourses', 'countLearners', 'reviews'));
     }
