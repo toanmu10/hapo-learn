@@ -26,9 +26,4 @@ class HomeController extends Controller
 
         return view('home')->with(compact('courses', 'otherCourses', 'countLessons', 'countCourses', 'countLearners', 'reviews'));
     }
-
-    public function test()
-    {
-        return view('test');
-    }
 }
