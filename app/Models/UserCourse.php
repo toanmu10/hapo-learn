@@ -18,14 +18,14 @@ class UserCourse extends Model
         'register_course_time'
     ];
 
-    public function scopeCountTheNumberOfLearners($query, $selectField)
+    public function scopeSelectField($query, $selectField)
     {
-        $countLearners = $query->select($selectField);
-        return $countLearners;
+        $selectField = $query->select($selectField);
+        return $selectField;
     }
 
-    public function scopeGroupByField($countLearners, $groupByField)
+    public function scopeGroupByField($selectField, $groupByField)
     {
-        return $countLearners->groupBy($groupByField);
+        return $selectField->groupBy($groupByField);
     }
 }
