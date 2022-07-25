@@ -28,9 +28,8 @@ class Review extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function scopeMain($query, $reviewNumber)
+    public function scopeMain($query)
     {
-        $reviews = $query->limit($reviewNumber);
-        return $reviews;
+        return $query->orderBy('created_at', config('homepage.sort_low_to_hight'))->limit(config('homepage.home_review_number'));
     }
 }

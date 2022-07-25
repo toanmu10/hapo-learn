@@ -18,14 +18,8 @@ class UserCourse extends Model
         'register_course_time'
     ];
 
-    public function scopeSelectField($query, $selectField)
+    public function scopeLearner($query)
     {
-        $selectField = $query->select($selectField);
-        return $selectField;
-    }
-
-    public function scopeGroupByField($selectField, $groupByField)
-    {
-        return $selectField->groupBy($groupByField);
+        return $query->select('user_id')->groupBy('user_id');
     }
 }

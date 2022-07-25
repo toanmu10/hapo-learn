@@ -43,20 +43,13 @@ class Course extends Model
         return $this->belongsToMany(Tag::class);
     }
 
-    public function scopeMain($query, $courseNumber)
+    public function scopeMain($query)
     {
-        $courses = $query->limit($courseNumber);
-        return $courses;
+        return $query->limit(config('homepage.home_course_number'));
     }
 
-    public function scopeOther($query, $otherCourseNumber)
+    public function scopeOther($query)
     {
-        $otherCourses = $query->limit($otherCourseNumber);
-        return $otherCourses;
-    }
-
-    public function scopeOrderByField($otherCourses, $orderByField, $isOrderBy)
-    {
-        return $otherCourses->orderBy($orderByField, $isOrderBy);
+        return $query->orderBy('name', config('homepage.sort_low_to_hight'))->limit(config('homepage.home_course_number'));
     }
 }
