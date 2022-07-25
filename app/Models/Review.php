@@ -27,4 +27,9 @@ class Review extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function scopeMain($query)
+    {
+        return $query->orderBy('created_at', config('homepage.sort_low_to_hight'))->limit(config('homepage.home_review_number'));
+    }
 }

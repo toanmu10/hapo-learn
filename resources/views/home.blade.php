@@ -11,7 +11,7 @@
                     Learn Anytime, Anywhere
                     <div class="title-extra">
                         at HapoLearn
-                        <img src="/images/owl.png" alt="haposhoft" class="title-img">
+                        <img src="{{ asset('images/owl.png') }}" alt="haposhoft" class="title-img">
                         !
                     </div>
                 </div>
@@ -33,42 +33,22 @@
 <section class="course">
     <div class="container">
         <div class="row course-list">
+            @foreach($courses as $course)
             <div class="col-lg-4 card-distance mt-40 ">
                 <div class="card border-course card-position card-shadow" >
                     <div class="row no-gutters">
-                        <div class="img-custom card-one col-lg-12 col-md-4 border-radius-img"></div>
+                        <div class="col-lg-12 col-md-4 card-img">
+                            <img class="border-radius-img img-course" src="{{$course['photo']}}" alt="">
+                        </div>
                         <div class="card-body col-lg-12 col-md-8 card-content">
-                            <h5 class="card-title title-course" >HTML/CSS/js Tutorial</h5>
-                            <p class="card-text title-course-content">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            <h5 class="card-title title-course" >{{ $course->name }}</h5>
+                            <p class="card-text title-course-content">{{ Str::limit($course->description, 100) }}</p>
                             <a href="#" class="btn btn-course">Take This Course</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 card-distance">
-                <div class="card border-course card-position card-shadow" >
-                    <div class="row no-gutters">
-                        <div class="img-custom card-two col-lg-12 col-md-4 border-radius-img"></div>
-                        <div class="card-body col-lg-12 col-md-8 card-content">
-                            <h5 class="card-title title-course" >LARAVEL Tutorial</h5>
-                            <p class="card-text title-course-content">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-                            <a href="#" class="btn btn-course">Take This Course</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 card-distance card-end ">
-                <div class="card border-course card-position card-shadow" >
-                    <div class="row no-gutters">
-                        <div class="img-custom card-three col-lg-12 col-md-4 border-radius-img"></div>
-                        <div class="card-body col-lg-12 col-md-8 card-content">
-                            <h5 class="card-title title-course" >PHP Tutorial</h5>
-                            <p class="card-text title-course-content">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
-                            <a href="#" class="btn btn-course">Take This Course</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-6 other-courses-title">
@@ -76,42 +56,22 @@
             </div>
         </div>
         <div class="row other-card-position other-course-list">
+            @foreach($otherCourses as $otherCourse)
             <div class="col-lg-4 card-distance">
                 <div class="card border-course card-shadow" >
                     <div class="row no-gutters">
-                        <div class="img-custom card-one col-lg-12 col-md-4 border-radius-img"></div>
+                        <div class="col-lg-12 col-md-4 card-img">
+                            <img class="border-radius-img img-course" src="{{$course->photo}}" alt="">
+                        </div>
                         <div class="card-body col-lg-12 col-md-8 card-content">
-                            <h5 class="card-title title-course" >CSS Tutorial</h5>
-                            <p class="card-text title-course-content">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                        <h5 class="card-title title-course">{{ $otherCourse->name }}</h5>
+                            <p class="card-text title-course-content">{{ Str::limit($otherCourse->description, 100) }}</p>
                             <a href="#" class="btn btn-course">Take This Course</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 card-distance">
-                <div class="card border-course card-shadow" >
-                    <div class="row no-gutters">
-                    <div class="img-custom card-two col-lg-12 col-md-4 border-radius-img"></div>
-                        <div class="card-body col-lg-12 col-md-8 card-content">
-                            <h5 class="card-title title-course" >Ruby on rails Tutorial</h5>
-                            <p class="card-text title-course-content"> I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-                            <a href="#" class="btn btn-course">Take This Course</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 card-distance card-end">
-                <div class="card border-course card-shadow" >
-                    <div class="row no-gutters">
-                        <div class="img-custom card-three col-lg-12 col-md-4 border-radius-img"></div>
-                        <div class="card-body col-lg-12 col-md-8 card-content">
-                            <h5 class="card-title title-course" >Ruby on rails Tutorial</h5>
-                            <p class="card-text title-course-content"> I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
-                            <a href="#" class="btn btn-course">Take This Course</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-5 course-shows">
@@ -164,83 +124,36 @@
     </div>
     <div class="container">
         <div class="slider">
+            @foreach($reviews as $review)
             <div class="slider-item">
                 <div class="slider-slogan">
-                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
+                    {{ $review->message }}
                 </div>
                 <div class="slider-user">
-                    <img src="/images/avatar.png" alt="" class="user-avatar">
+                    @php
+                        $avatar = is_null($review->user->avatar) ? '/images/avatar.png' : $review->user->avatar;
+                    @endphp
+                    <img src="{{ asset('images/avatar.png') }}" alt="" class="user-avatar">
                     <div class="user-info">
-                        <div class="user-name">Hoang Anh Nguyen</div>
-                        <div class="user-language">PHP</div>
+                        <div class="user-name">{{ $review->user->name }}</div>
+                        <div class="user-language">{{ $review->course->name }}</div>
                         <div class="user-stars">
+                        @php
+                            $rates = $review->rate;
+                        @endphp
+
+                         @for ($i = 0; $i < $rates; $i++)
                             <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-solid fa-star user-star-icon"></i>
+                        @endfor
+
+                        @for ($i = 0; $i < 5 - $rates; $i++)
                             <i class="fa-regular fa-star user-star-icon"></i>
-                            <i class="fa-regular fa-star user-star-icon"></i>
+                        @endfor
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slider-item">
-                <div class="slider-slogan">
-                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
-                </div>
-                <div class="slider-user">
-                    <img src="/images/avatar.png" alt="" class="user-avatar">
-                    <div class="user-info">
-                        <div class="user-name">Hoang Anh Nguyen</div>
-                        <div class="user-language">PHP</div>
-                        <div class="user-stars">
-                            <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-regular fa-star-half-stroke user-star-icon"></i>
-                            <i class="fa-regular fa-star user-star-icon"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-item">
-                <div class="slider-slogan">
-                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
-                </div>
-                <div class="slider-user">
-                    <img src="/images/avatar.png" alt="" class="user-avatar">
-                    <div class="user-info">
-                        <div class="user-name">Hoang Anh Nguyen</div>
-                        <div class="user-language">PHP</div>
-                        <div class="user-stars">
-                            <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-regular fa-star-half-stroke user-star-icon"></i>
-                            <i class="fa-regular fa-star user-star-icon"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider-item">
-                <div class="slider-slogan">
-                    “A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”
-                </div>
-                <div class="slider-user">
-                    <img src="/images/avatar.png" alt="" class="user-avatar">
-                    <div class="user-info">
-                        <div class="user-name">Hoang Anh Nguyen</div>
-                        <div class="user-language">PHP</div>
-                        <div class="user-stars">
-                            <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-solid fa-star user-star-icon"></i>
-                            <i class="fa-regular fa-star-half-stroke user-star-icon"></i>
-                            <i class="fa-regular fa-star user-star-icon"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
@@ -261,15 +174,15 @@
             <div class="row">
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Courses</p>
-                    <p class="statistic-quantity">1,586</p>
+                    <p class="statistic-quantity">{{ $countCourses }}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Lessons</p>
-                    <p class="statistic-quantity">2,689</p>
+                    <p class="statistic-quantity">{{ $countLessons }}</p>
                 </div>
                 <div class="statistic-item col-lg-4 col-md-4">
                     <p class="statistic-name">Learners</p>
-                    <p class="statistic-quantity">16,882</p>
+                    <p class="statistic-quantity">{{ $countLearners}}</p>
                 </div>
             </div>
         </div>

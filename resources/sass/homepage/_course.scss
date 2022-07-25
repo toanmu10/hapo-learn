@@ -11,27 +11,16 @@
   box-shadow: 0 0rem 0.5rem rgba(0, 0, 0, 0.6) ;
 }
 
-.img-custom {
-  background-position: center;
-  background-size: auto auto;
-  background-repeat: no-repeat;
+.card-img {
   height: 220px;
 }
 
-.img-custom.card-one {
-  background-image: url('/images/html.png');
-  background-color: #3F6185;
-}  
-
-.img-custom.card-two {
-  background-image: url('/images/laravel.png');
-  background-color: #DC594C;
-}  
- 
-.img-custom.card-three {
-  background-image: url('/images/php.png');
-  background-color: #556598;
-}  
+.img-course {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
 
 .border-radius-img {
   border-top-left-radius: 15px;
@@ -47,7 +36,7 @@
 }
   
 .card-content {
-  padding: 22px !important;
+  padding: 22px 10px !important;
 }
 
 .title-course {
@@ -151,49 +140,14 @@
     margin-bottom: 48px;
     font-size: 28px;
   }
-}
 
-  @media (max-width: 739px) {
-  .background-banner {
-    background-image: url('/images/Hapo_Learn_banner_mobile.png');
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 24vh;
+  .card-img {
+    height: 193px;
   }
 
-  .border-radius-img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-
-  .img-custom {
-    height: 163px;
-  }
-  
-  .card-distance {
-    margin-bottom: 30px;
-  }
-
-  .title-course {
-    font-size: 20px;
-  }
-  
-  .title-course-content {
-    font-size: 12px;
-  }
-  
-  .other-courses-title {
-    font-size: 40px;
-  }
-
-  .card-end {
-    margin-bottom: 0;
-  }
-
-  .course-shows {
-    font-size: 22px;
-    margin-top: 45px;
+  .img-course {
+    width: 95%;
+    height: 100%;
   }
 }
 
@@ -227,5 +181,14 @@
   .course-shows {
     font-size: 22px;
     margin-top: 45px;
+  }
+
+  .card-img {
+    height: 163px;
+  }
+
+  .img-course {
+    width: 100%;
+    height: 100%;
   }
 }
