@@ -17,12 +17,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $courses = Course::showMainCourses(config('course.home_course_number'))->get();
-        $otherCourses = Course::showOtherCourses(config('course.home_course_number'))->orderByField(config('course.order_by_field'), config('course.sort'))->get();
+        $courses = Course::main(config('course.home_course_number'))->get();
+        $otherCourses = Course::other(config('course.home_course_number'))->orderByField(config('course.order_by_field'), config('course.sort'))->get();
         $countLessons = Lesson::count();
         $countCourses = Course::count();
         $countLearners = UserCourse::selectField(config('user_course.select_field'))->groupByField(config('user_course.group_by_field'))->get()->count();
-        $reviews = Review::showMainReviews(config('review.home_review_number'))->get();
+        $reviews = Review::main(config('review.home_review_number'))->get();
 
         return view('home')->with(compact('courses', 'otherCourses', 'countLessons', 'countCourses', 'countLearners', 'reviews'));
     }
