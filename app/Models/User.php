@@ -42,7 +42,7 @@ class User extends Authenticatable
 
     public function courses()
     {
-        return $this->belongsToMany(Course::class,'user_course');
+        return $this->belongsToMany(Course::class, 'user_course');
     }
 
     public function teacherCourses()
@@ -57,6 +57,6 @@ class User extends Authenticatable
 
     public function scopeTeachers($query)
     {
-        return $query->where('role','=', '1');
+        return $query->where('role', '=', '1');
     }
 }
