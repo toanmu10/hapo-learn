@@ -153,7 +153,6 @@
   color: white;
 }
 
-
 .mr-30 {
   margin-right: 30px;
 }
@@ -178,10 +177,12 @@
   display: none;
 }
 
-.select2-container
-.select2-selection--single, .select2-selection--multiple {
-  min-width: 180px;
-  height: 34px;
+.select2-container {
+  .select2-selection--single,
+  .select2-selection--multiple {
+    min-width: 180px;
+    height: 34px;
+  }
 }
 
 .select2-container {
@@ -196,4 +197,3 @@
     }
   }
 }
-

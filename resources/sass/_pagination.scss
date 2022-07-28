@@ -1,24 +1,37 @@
 .pagination {
-    margin-bottom: 0;
-    margin-top: 20px;
-    justify-content: flex-end !important;
-    .page-item {
-        padding-right: 6px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  justify-content: flex-end;
+
+  .page-item {
+    padding-right: 6px;
+  }
+
+  .page-link {
+    color: $main-bg-color;
+    border: 1px solid $main-bg-color;
+
+    &:hover {
+      background-color: $main-bg-color;
+      color: white;
     }
+  }
+}
+
+.page-item {
+  &.active {
     .page-link {
-        color: $main-bg-color;
-        border: 1px solid $main-bg-color;
-        &:hover {
-            background-color: $main-bg-color;
-            color: white;
-        }
+      background-color: $main-bg-color;
+      border-color: $main-bg-color;
     }
+  }
 }
-.page-item.active .page-link {
-    background-color: $main-bg-color;
-    border-color: $main-bg-color;
-}
-.page-item.disabled .page-link {
-    background-color: $main-bg-color;
-    color: white;
+
+.page-item {
+  &.disabled {
+    .page-link {
+      background-color: $main-bg-color;
+      color: white;
+    }
+  }
 }
