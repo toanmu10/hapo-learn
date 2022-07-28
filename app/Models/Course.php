@@ -91,7 +91,7 @@ class Course extends Model
 
 	    if (isset($data['lesson']) && !empty($data['lesson'])) {
             $query->withCount('lessons')->orderBy('lessons_count', $data['lesson']);
-		}
+        }
 
         if (isset($data['tags']) && count($data['tags']) > 0) {
             $query->join('course_tag', 'courses.id', '=', 'course_tag.course_id')->whereIn('tag_id', $data['tags']);
