@@ -5,9 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Course;
 use App\Models\User;
-use App\Models\Lesson;
-use App\Models\UserCourse;
-use App\Models\TeacherCourse;
 use App\Models\Tag;
 use App\Models\Review;
 
