@@ -30,7 +30,7 @@ class Course extends Model
 
     public function users()
     {
-        return $this->belongsToMany(User::class);
+        return $this->belongsToMany(User::class, 'user_course','course_id');
     }
 
     public function teachers()
@@ -51,5 +51,52 @@ class Course extends Model
     public function scopeOther($query)
     {
         return $query->orderBy('name', config('homepage.sort_low_to_hight'))->limit(config('homepage.home_course_number'));
+    }
+    public function getTotalLessonsAttribute()
+    {
+        return $this->lessons->count();
+    }
+
+    public function getTotalTimesAttribute()
+    {
+        return $this->lessons->sum('time');
+    }
+
+    public function getTotalLearnersAttribute()
+    {
+        return $this->users->count();
+    }
+
+    public function scopeSearch($query, $data)
+    {
+    	if(isset($data['keyword'])) {
+            $query->where('name', 'LIKE', '%' . $data['keyword'] . '%')->orWhere('description', 'LIKE', '%' . $data['keyword'] . '%');
+        }
+
+        if (isset($data['created_time'])) {
+            $data['created_time'] == 'newest' ? $query->orderBy('courses.created_at', 'desc') : $query->orderBy('courses.created_at','asc');
+        }
+
+        if(isset($data['teachers']) && !empty($data['teachers'])) {
+            $query->join('teacher_course', 'courses.id', '=', 'teacher_course.course_id')->whereIn('user_id', $data['teachers']);
+        }
+
+        if (isset($data['learner']) && !empty($data['learner'])) {
+            $query->withCount('users')->orderBy('users_count', $data['learner']);
+        }
+
+        if (isset($data['time']) && !empty($data['time'])) {
+            $query->withCount('lessons')->withSum('lessons','time')->orderBy('lessons_sum_time', $data['time']);
+        }
+
+        if (isset($data['tags']) && count($data['tags']) > 0) {
+            $query->join('course_tag', 'courses.id', '=', 'course_tag.course_id')->whereIn('tag_id', $data['tags']);
+        }
+
+        if (isset($data['review']) && !empty($data['review'])) {
+            $query->withCount('reviews')->orderBy('reviews_count', $data['review']);
+        }
+
+        return $query;
     }
 }

@@ -13,6 +13,9 @@
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
+// Select2
+@import "~select2/dist/css/select2.css";
+
 // Variables
 @import 'variables';
 
@@ -36,3 +39,7 @@
 @import 'homepage/login';
 
 @import 'homepage/register';
+
+@import 'courses/courses';
+
+@import 'pagination';

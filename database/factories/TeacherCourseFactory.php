@@ -2,20 +2,20 @@
 
 namespace Database\Factories;
 
-use App\Models\UserCourse;
+use App\Models\TeacherCourse;
 use App\Models\Course;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
-class UserCourseFactory extends Factory
+class TeacherCourseFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = UserCourse::class;
+    protected $model = TeacherCourse::class;
 
     /**
      * Define the model's default state.
@@ -25,7 +25,7 @@ class UserCourseFactory extends Factory
     public function definition()
     {
         return [
-            "user_id" => $this->faker->randomElement(User::where('role', '=', '0')->pluck('id')),
+            "user_id" => $this->faker->randomElement(User::where('role', '=', '1')->pluck('id')),
             "course_id" => $this->faker->randomElement(Course::pluck('id')),
         ];
     }

@@ -14,7 +14,8 @@ class Lesson extends Model
         'title',
         'description',
         'requirement',
-        'course_id'
+        'course_id',
+        'time'
     ];
 
     public function programs()

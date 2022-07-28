@@ -3,9 +3,9 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\Lesson;
+use App\Models\Review;
 
-class LessonTableSeeder extends Seeder
+class ReviewsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class LessonTableSeeder extends Seeder
      */
     public function run()
     {
-        Lesson::factory()->count(20)->create();
+        Review::factory()->count(50)->create();
     }
 }
