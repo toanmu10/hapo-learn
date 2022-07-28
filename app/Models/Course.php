@@ -30,7 +30,7 @@ class Course extends Model
 
     public function users()
     {
-        return $this->belongsToMany(User::class, 'user_course','course_id');
+        return $this->belongsToMany(User::class, 'user_course', 'course_id');
     }
 
     public function teachers()
@@ -69,7 +69,7 @@ class Course extends Model
 
     public function scopeSearch($query, $data)
     {
-    	if(isset($data['keyword'])) {
+    	if (isset($data['keyword'])) {
             $query->where('name', 'LIKE', '%' . $data['keyword'] . '%')->orWhere('description', 'LIKE', '%' . $data['keyword'] . '%');
         }
 
@@ -77,7 +77,7 @@ class Course extends Model
             $data['created_time'] == 'newest' ? $query->orderBy('courses.created_at', 'desc') : $query->orderBy('courses.created_at');
         }
 
-        if(isset($data['teachers']) && !empty($data['teachers'])) {
+        if (isset($data['teachers']) && !empty($data['teachers'])) {
             $query->join('teacher_course', 'courses.id', '=', 'teacher_course.course_id')->whereIn('user_id', $data['teachers']);
         }
 
@@ -93,7 +93,7 @@ class Course extends Model
             $query->withCount('lessons')->orderBy('lessons_count', $data['lesson']);
 		}
 
-        if (isset($data['tags']) && count($data['tags']) > 0) {
+        if(isset($data['tags']) && count($data['tags']) > 0) {
             $query->join('course_tag', 'courses.id', '=', 'course_tag.course_id')->whereIn('tag_id', $data['tags']);
         }
 
