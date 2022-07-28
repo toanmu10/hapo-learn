@@ -89,7 +89,7 @@ class Course extends Model
             $query->withCount('lessons')->withSum('lessons', 'time')->orderBy('lessons_sum_time', $data['time']);
         }
 
-	    if (isset($data['lesson']) && !empty($data['lesson'])) {
+        if (isset($data['lesson']) && !empty($data['lesson'])) {
             $query->withCount('lessons')->orderBy('lessons_count', $data['lesson']);
         }
 
