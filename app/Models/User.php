@@ -57,6 +57,6 @@ class User extends Authenticatable
 
     public function scopeTeachers($query)
     {
-        return $query->where('role', '=', '1');
+        return $query->where('role', config('course.role_teacher'));
     }
 }

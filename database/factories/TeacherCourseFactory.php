@@ -25,7 +25,7 @@ class TeacherCourseFactory extends Factory
     public function definition()
     {
         return [
-            "user_id" => $this->faker->randomElement(User::where('role', '=', '1')->pluck('id')),
+            "user_id" => $this->faker->randomElement(User::where('role', config('course.role_teacher'))->pluck('id')),
             "course_id" => $this->faker->randomElement(Course::pluck('id')),
         ];
     }
