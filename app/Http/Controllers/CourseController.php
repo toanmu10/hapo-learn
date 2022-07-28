@@ -26,7 +26,7 @@ class CourseController extends Controller
         $tags = Tag::all();
         $reviews = Review::all();
 
-        return view('courses.index')->with(compact('allCourses', 'teachers','tags','reviews', 'data'));
+        return view('courses.index')->with(compact('allCourses', 'teachers', 'tags', 'reviews', 'data'));
     }
 
     /**
