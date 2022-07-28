@@ -73,7 +73,7 @@ class Course extends Model
         }
 
         if (isset($data['created_time'])) {
-            $data['created_time'] == 'newest' ? $query->orderBy('courses.created_at', 'desc') : $query->orderBy('courses.created_at');
+            $data['created_time'] == config('course.newest') ? $query->orderBy('courses.created_at', config('course.sort_hight_to_low')) : $query->orderBy('courses.created_at');
         }
 
         if (isset($data['teachers']) && !empty($data['teachers'])) {
@@ -96,8 +96,8 @@ class Course extends Model
             $query->join('course_tag', 'courses.id', '=', 'course_tag.course_id')->whereIn('tag_id', $data['tags']);
         }
 
-        if (isset($data['review']) && !empty($data['review'])) {
-            $query->withCount('reviews')->orderBy('reviews_count', $data['review']);
+        if (isset($data['rate']) && !empty($data['rate'])) {
+            $query->withCount('reviews')->orderBy('reviews_count', $data['rate']);
         }
 
         return $query;
