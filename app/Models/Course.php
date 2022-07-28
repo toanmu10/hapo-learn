@@ -74,7 +74,7 @@ class Course extends Model
         }
 
         if (isset($data['created_time'])) {
-            $data['created_time'] == 'newest' ? $query->orderBy('courses.created_at', 'desc') : $query->orderBy('courses.created_at','asc');
+            $data['created_time'] == 'newest' ? $query->orderBy('courses.created_at', 'desc') : $query->orderBy('courses.created_at');
         }
 
         if(isset($data['teachers']) && !empty($data['teachers'])) {
