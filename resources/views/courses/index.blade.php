@@ -63,7 +63,7 @@
                     </select>
                 </div>
                 <div class="form-group mr-10">
-                    <select name="lessons" id="count_lessons" class="js-example-select2">
+                    <select name="lesson" id="lesson" class="js-example-select2">
                         <option value="">Số bài học</option>
                         <option value="asc"
                         @if(isset($data['lesson']) && $data['lesson'] == config('course.sort_low_to_hight')) selected @endif
