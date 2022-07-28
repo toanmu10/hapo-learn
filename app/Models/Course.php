@@ -85,7 +85,7 @@ class Course extends Model
         }
 
         if (isset($data['time']) && !empty($data['time'])) {
-            $query->withCount('lessons')->withSum('lessons', 'time')->orderBy('lessons_sum_time', $data['time']);
+            $query->withSum('lessons', 'time')->orderBy('lessons_sum_time', $data['time']);
         }
 
         if (isset($data['lesson']) && !empty($data['lesson'])) {
