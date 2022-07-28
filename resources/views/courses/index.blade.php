@@ -41,7 +41,7 @@
                     </select>
                 </div>
                 <div class="form-group mr-10">
-                    <select name="learners" id="learners" class="js-example-select2">
+                    <select name="learner" id="learner" class="js-example-select2">
                         <option value="">Số người học</option>
                         <option value="{{ config('course.sort_low_to_hight') }}"
                         @if(isset($data['learner']) && $data['learner'] == config('course.sort_low_to_hight')) selected @endif
