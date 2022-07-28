@@ -52,7 +52,7 @@
                     </select>
                 </div>
                 <div class="form-group mr-10">
-                    <select name="times" id="times" class="js-example-select2">
+                    <select name="time" id="time" class="js-example-select2">
                         <option value="">Thời gian học</option>
                         <option value="{{ config('course.sort_low_to_hight') }}"
                         @if(isset($data['time']) && $data['time'] == config('course.sort_low_to_hight')) selected @endif
