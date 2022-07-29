@@ -126,14 +126,10 @@
             </div>
         </div>
         @endforeach
-
         @if(count($allCourses) == 0)
         <h3>No Result</h3>
         @endif
-
-        {{ $allCourses->links('courses.paginate') }}
+        {{ $allCourses->appends(request()->query())->links() }}
     </div>
 </div>
-
-
 @endsection
