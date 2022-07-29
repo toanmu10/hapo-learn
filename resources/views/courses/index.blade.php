@@ -13,7 +13,7 @@
                 <div class="search">
                     <input type="text" placeholder="Search..." class= "input-search border-btn-input" name= "keyword" id= "keyword"
                     @if(isset($data['keyword'])) value="{{ $data['keyword'] }}" @endif />
-                    <i class="fa-brands fa-searchengin search-icon"></i>
+                    <button class="btn-search-icon" name="filter_submit"><i class="fa-brands fa-searchengin search-icon"></i></button>
                 </div>
                 <input class="btn btn-submit-search" type="submit" name="filter_submit" value="Tìm kiếm">
             </div>

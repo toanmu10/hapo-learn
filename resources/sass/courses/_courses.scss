@@ -19,11 +19,17 @@
     padding: 9px 43px 9px 13px;
     width: 355px;
   }
+  .btn-search-icon {
+    padding: 7px;
+    border: 0;
+    border-radius: 5px;
+    background-color: white;
+    transform: translateX(-40px);
 
-  .search-icon {
-    font-size: 20px;
-    color : $main-text-color;
-    transform: translateX(-30px);
+    .search-icon {
+      font-size: 20px;
+      color : $main-text-color;
+    }
   }
 
   .btn-submit-search {
@@ -32,6 +38,7 @@
     border-radius: 5px;
     padding: 8px 12px;
     color: white;
+    margin-left: -30px;
   }
 }
 
