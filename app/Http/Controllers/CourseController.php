@@ -18,12 +18,11 @@ class CourseController extends Controller
     public function index(Request $request)
     {
         $data = $request->all();
-        $allCourses = Course::search($data)->paginate(config('course.paginate'));
+        $courses = Course::search($data)->paginate(config('course.paginate'));
         $teachers = User::teachers()->get();
         $tags = Tag::all();
-        $reviews = Review::all();
 
-        return view('courses.index')->with(compact('allCourses', 'teachers', 'tags', 'reviews', 'data'));
+        return view('courses.index')->with(compact('courses', 'teachers', 'tags', 'data'));
     }
 
     /**

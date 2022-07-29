@@ -8,31 +8,31 @@
             <div class="row">
                 <div class="btn btn-filter border-btn-input mr-10">
                     <i class="fa-solid fa-arrow-down-wide-short filter-icon"></i>
-                    <span>Filter</span>
+                    <span>{{ __('attribute.search') }}</span>
                 </div>
                 <div class="search">
                     <input type="text" placeholder="Search..." class= "input-search border-btn-input" name= "keyword" id= "keyword"
                     @if(isset($data['keyword'])) value="{{ $data['keyword'] }}" @endif />
                     <button class="btn-search-icon" name="filter_submit"><i class="fa-brands fa-searchengin search-icon"></i></button>
                 </div>
-                <input class="btn btn-submit-search" type="submit" name="filter_submit" value="Tìm kiếm">
+                <input class="btn btn-submit-search" type="submit" name="filter_submit" value="{{ __('attribute.search') }}">
             </div>
             <div class="mt-20 border-btn-input filter-form row">
-                <span class="mr-30">Lọc theo</span>
+                <span class="mr-30">{{ __('attribute.filter') }}</span>
                 <div class="form-group row mr-10">
                     <div class="mr-10">
                         <input type="radio" id="newest" name="created_time" value= "{{ config('course.newest') }}" class="form-control hidden"
                         @if(empty($data['created_time']) || (isset($data['created_time']) && $data['created_time'] == config('course.newest'))) checked @endif />
-                        <label for="newest" class="newest">Newest</label>
+                        <label for="newest" class="newest">{{ __('attribute.newest') }}</label>
                     </div>
                     <div class="mr-10">
                         <input type="radio" id="oldest" name="created_time" value="{{ config('course.oldest') }}" class="form-control hidden"
                         @if(isset($data['created_time']) && $data['created_time'] == config('course.oldest')) checked @endif />
-                        <label class="oldest" for="oldest">Oldest</label>
+                        <label class="oldest" for="oldest">{{ __('attribute.oldest') }}</label>
                     </div>
                 </div>
                 <div class="form-group mr-10">
-                    <select name="teachers[]" id="teacher" class="js-example-select2 js-example-placeholder-multiple-teacher mr-10" multiple="multiple">
+                    <select name="teachers[]" id="teacher" class="select2-multiple teacher-placeholder-multiple mr-10" multiple="multiple">
                         @foreach($teachers as $teacher)
                             <option value="{{ $teacher->id }}"
                             @if(isset($data['teachers']) && in_array($teacher->id, $data['teachers'])) selected @endif>
@@ -41,40 +41,40 @@
                     </select>
                 </div>
                 <div class="form-group mr-10">
-                    <select name="learner" id="learner" class="js-example-select2">
-                        <option value="">Số người học</option>
+                    <select name="learner" id="learner" class="select2">
+                        <option value="">{{ __('attribute.number_of_learners') }}</option>
                         <option value="{{ config('course.sort_low_to_hight') }}"
                         @if(isset($data['learner']) && $data['learner'] == config('course.sort_low_to_hight')) selected @endif
-                        >Tăng dần</option>
+                        >{{ __('attribute.ascending') }}</option>
                         <option value="{{ config('course.sort_hight_to_low') }}"
                         @if(isset($data['learner']) && $data['learner'] == config('course.sort_hight_to_low')) selected @endif
-                        >Giảm dần</option>
+                        >{{ __('attribute.decrease') }}</option>
                     </select>
                 </div>
                 <div class="form-group mr-10">
-                    <select name="time" id="time" class="js-example-select2">
-                        <option value="">Thời gian học</option>
+                    <select name="time" id="time" class="select2">
+                        <option value="">{{ __('attribute.study_time') }}</option>
                         <option value="{{ config('course.sort_low_to_hight') }}"
                         @if(isset($data['time']) && $data['time'] == config('course.sort_low_to_hight')) selected @endif
-                        >Tăng dần</option>
+                        >{{ __('attribute.ascending') }}</option>
                         <option value="{{ config('course.sort_hight_to_low') }}"
                         @if(isset($data['time']) && $data['time'] == config('course.sort_hight_to_low')) selected @endif
-                        >Giảm dần</option>
+                        >{{ __('attribute.decrease') }}</option>
                     </select>
                 </div>
                 <div class="form-group mr-10">
-                    <select name="lesson" id="lesson" class="js-example-select2">
-                        <option value="">Số bài học</option>
+                    <select name="lesson" id="lesson" class="select2">
+                        <option value="">{{ __('attribute.number_of_lessons') }}</option>
                         <option value= "{{ config('course.sort_low_to_hight') }}"
                         @if(isset($data['lesson']) && $data['lesson'] == config('course.sort_low_to_hight')) selected @endif
-                        >Tăng dần</option>
+                        >{{ __('attribute.ascending') }}</option>
                         <option value="{{ config('course.sort_hight_to_low') }}"
                         @if(isset($data['lesson']) && $data['lesson'] == config('course.sort_hight_to_low')) selected @endif
-                        >Giảm dần</option>
+                        >{{ __('attribute.decrease') }}</option>
                     </select>
                 </div>
                 <div class="form-group mr-10 ml-75">
-                    <select name="tags[]" id="tags" class="js-example-select2 js-example-placeholder-multiple-tag" multiple="multiple">
+                    <select name="tags[]" id="tags" class="select2 tag-placeholder-multiple" multiple="multiple">
                         <option value="">Tags</option>
                         @foreach($tags as $tag)
                             <option value="{{ $tag->id }}"
@@ -84,21 +84,21 @@
                     </select>
                 </div>
                 <div class="form-group mr-10">
-                    <select name="rate" id="rate" class="js-example-select2">
-                        <option value="">Reviews</option>
+                    <select name="rate" id="rate" class="select2">
+                        <option value="">{{ __('attribute.reviews') }}</option>
                         <option value="{{ config('course.sort_low_to_hight') }}"
                         @if (isset($data['rate']) && $data['rate'] == config('course.sort_low_to_hight')) selected @endif>
-                        Tăng dần</option>
+                        {{ __('attribute.ascending') }}</option>
                         <option value="{{ config('course.sort_hight_to_low') }}"
                         @if (isset($data['rate']) && $data['rate'] == config('course.sort_hight_to_low')) selected @endif>
-                        Giảm dần</option>
+                        {{ __('attribute.decrease') }}</option>
                     </select>
                 </div>
             </div>
         </form>
     </div>
     <div class="container-courses">
-        @foreach($allCourses as $course)
+        @foreach($courses as $course)
         <div class="courses-item col-5">
             <div class="course-info row">
                 <div class="col-2">
@@ -126,10 +126,10 @@
             </div>
         </div>
         @endforeach
-        @if(count($allCourses) == 0)
+        @if(count($courses) == 0)
         <h3>No Result</h3>
         @endif
-        {{ $allCourses->appends(request()->query())->links('courses.paginate') }}
+        {{ $courses->appends(request()->query())->links('vendor.pagination.bootstrap-4') }}
     </div>
 </div>
 @endsection

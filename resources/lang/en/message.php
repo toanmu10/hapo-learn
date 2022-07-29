@@ -15,4 +15,5 @@ return [
     'data_correct' => 'Incorrect username or password',
     'register_error' => 'Registration failed',
     'register_suscess' => 'Registration suscessed',
+    
 ];
