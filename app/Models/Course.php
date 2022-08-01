@@ -68,18 +68,18 @@ class Course extends Model
 
     public function scopeSearch($query, $data)
     {
-        if (isset($data['keyword'])) {
-            $query->where('name', 'LIKE', '%' . $data['keyword'] . '%')->orWhere('description', 'LIKE', '%' . $data['keyword'] . '%');
-        }
+        // if (isset($data['keyword'])) {
+        //     $query->where('name', 'LIKE', '%' . $data['keyword'] . '%')->orWhere('description', 'LIKE', '%' . $data['keyword'] . '%');
+        // }
 
-        if (isset($data['created_time'])) {
-            $query->orderBy('courses.created_at', config('course.sort_hight_to_low'));
-        }
+        // if (isset($data['created_time'])) {
+        //     $query->orderBy('courses.created_at', config('course.sort_hight_to_low'));
+        // }
 
         if (isset($data['teachers']) && !empty($data['teachers'])) {
             $query->whereHas('teachers', function ($query) use ($data) {
                 $query->whereIn('user_id', $data['teachers']);
-            })->dd();
+            });
         }
 
         if (isset($data['learner']) && !empty($data['learner'])) {
