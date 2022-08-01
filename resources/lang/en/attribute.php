@@ -12,4 +12,14 @@ return [
     'sign_in_with' => 'Sign In With',
     'or_new_to_hapolearn' => 'Or New to HapoLearn',
     'create_new_account' => 'Create new account',
+    'filter' => 'Filter',
+    'ascending' => 'Ascending',
+    'decrease' => 'Decrease',
+    'newest' => 'Newest',
+    'oldest' => 'Oldest',
+    'number_of_learners' => 'Number of learners',
+    'study_time' => 'Study time',
+    'number_of_lessons' => 'Number of lessons',
+    'search' => 'Search',
+    'reviews' => 'Reviews'
 ];

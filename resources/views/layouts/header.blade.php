@@ -12,11 +12,11 @@
                     <a class="nav-link" href="#">Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">all courses</a>
+                    <a class="nav-link" href="{{ route('courses.index') }}">All Courses</a>
                 </li>
                 @if (!Auth::user())
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{route('login')}}">login/register <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ route('login') }}">login/register <span class="sr-only">(current)</span></a>
                 </li>
                 @endif
                 <li class="nav-item">

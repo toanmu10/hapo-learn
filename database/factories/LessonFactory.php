@@ -17,6 +17,7 @@ class LessonFactory extends Factory
             'course_id' => $this->faker->numberBetween(0, 10),
             'title' => $this->faker->text(200),
             'description' => $this->faker->text(255),
+            'time' => rand(1, 5),
         ];
     }
 }
