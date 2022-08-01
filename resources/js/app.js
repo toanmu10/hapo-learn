@@ -3,9 +3,9 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-require('./bootstrap');
 import 'slick-carousel/slick/slick';
 import 'select2';
+require('./bootstrap');
 require('./slick');
 require('./select2');
 require('./filter');
