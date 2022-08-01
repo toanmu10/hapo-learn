@@ -129,7 +129,7 @@
         @if(count($courses) == 0)
         <h3>No Result</h3>
         @endif
-        {{ $courses->appends(request()->query())->links('vendor.pagination.bootstrap-4') }}
+        {{ $courses->appends(request()->query())->links() }}
     </div>
 </div>
 @endsection

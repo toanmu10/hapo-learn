@@ -1,3 +1,5 @@
-$('.btn-filter').click(function() {
-  $('.filter-form').toggleClass('active');
-})
+$(function() {
+  $('.btn-filter').click(function() {
+    $('.filter-form').toggleClass('active');
+  });
+});
